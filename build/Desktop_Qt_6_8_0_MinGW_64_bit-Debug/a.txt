@@ -1,0 +1,2301 @@
+[10:23:48.758] 接收:
+ �
+[10:23:48.793] 接收:
+ dvfs= 0xc
+
+NO=0x4339bc9,0xc0f2c3e3
+
+PD=0x0, WD_CTL=0x1c
+
+nor:
+[10:23:48.794] 接收:
+  0x00000000, 1
+
+p
+[10:23:48.800] 接收:
+ ara=0x1000,r=1, i=0, crc=0
+
+
+[10:23:48.809] 接收:
+ o��
+[10:23:48.819] 接收:
+ z_sys_init entry(0x1100cb50) func:0x11000d59
+z_sys_init entry(0
+[10:23:48.819] 接收:
+ x1100cb58) func:0x11002711
+z_sys_init dev(UART_0) func:0x110031
+[10:23:48.825] 接收:
+ 2d
+z_sys_init entry(0x1100cb68) func:0x11002f6d
+z_sys_init entry(0x1100cb70) func:0x11000e2d
+WAKE_PD_SVCC = 0x0
+z_sys_init d
+[10:23:48.825] 接收:
+ ev(WIO) func:0x110032b5
+gpio irq init
+z_sys_init dev(GPIOC) func:0x110032b5
+z_sys_init dev(GPIOB) func:0x110032b5
+z_sys_init dev(GPIOA) func:0x110032b5
+z_sys_init entry(0x1100cb98) func:0x11009701
+z_sys_init dev(spi_flash) func:0x380007cf
+read spi nor chipid:0x182085, cid=24
+spinor status: {0x02 0x02 0x00}
+nor is 4 line mode
+
+[10:23:48.838] 接收:
+ SPI0: set rate 100000000 Hz, real rate 93333333 Hz,CMU_SPICLK=0x102
+read again spi nor chipid:0x182085
+spinor status: {0x02 0x
+[10:23:48.839] 接收:
+ 02 0x00}
+z_sys_init dev(WDT_0) func:0x1100c43d
+z_sys_init entr
+[10:23:48.843] 接收:
+ y(0x1100cbb0) func:0x11001bc9
+** Showing partition infomation **
+id  name      offset    type  file_id  mirror_id  flag
+0   fw0_boot  0x0       1     1        0          0     
+1   fw0_para  0x1000    6     2        0          0     
+2   fw1_boot  0x2000    1     1        1          0     
+3   fw1_para  0x3000   
+[10:23:48.844] 接收:
+  6     2        1          0     
+4   fw0_rec   0x4000    3     3        0          0     
+5   fw0_sys   0x24000   2     4        0          0     
+6   fw0_sdfs  0x1a5000  4     5        0          0     
+7   nvram_fa  0x1b5000  4     6        15         0     
+8   nvram_fa  0x1b6000  4     7        15         0     
+9   nvram_us  0x1b8000  4     8        15         0     
+10  user_rw   0x1ba000  4     9        0          0     
+11  logbuf    0x1cc000  4     251      0          0     
+12  evtbuf    0x1d0000  4     252      0          0     
+13  coredump  0x1d2000  4     253      0          0     
+14  res_a     0x1dc000  4     10       0          0     
+15  font      0x38f000  4     12       0          0     
+16  res_b     0x3c6000  4     11       0          0     
+17  sdfs_k    0x3c7000  4     20       0   
+[10:23:48.848] 接收:
+        0     
+18  fw0_temp  0x447000  5     254      0          0     
+19  runtimel  0x547000  4     250      0          0    
+[10:23:48.848] 接收:
+  
+20  udisk     0x557000  4     40       0          0     
+z_sys_init entry(0x1100cbb8) func:0x11001a81
+sdfs: init mapping to 0x13000000, koff=0x11012d70
+z_sys_init dev(sys_clock) func:0x110027a5
+z_sys_init dev(DMA_0) func:0x11003381
+pchan=10; vchan=10, pnum=6,start=4
+z_sys_init entry(0x1100cbd0) func:0x11002f8d
+board_later_init 314: 
+z_sys_init entry(0x1100cbd8) func:0x110017d1
+z_sys_init entry(0x1100cbe0) func:0x11001939
+sd_disk_init,size=0, off=0 secotr
+z_sys_init entry(0x1100cbe8) func:0x1100509d
+init nvram storage
+
+[10:23:48.860] 接收:
+ z_sys_init dev(lcdc_acts) func:0x1100c2c9
+z_sys_init dev(PWM) f
+[10:23:48.861] 接收:
+ unc:0x11005435
+z_sys_init entry(0x1100cc00) func:0x11001f0d
+z_sys_init dev(lcd_panel) func:0x110023b1
+!!!ERR: dev de_acts not
+[10:23:48.864] 接收:
+  found
+W: Could not get display engine device
+I: panel late-re
+[10:23:48.866] 接收:
+ sume
+z_sys_init entry(0x1100cc10) func:0x11001edd
+***  Current Firmware Version  ***
+ Firmware Version: 0x00010000
+ res Version: 0x00010000
+   System Version: 0x00000000
+     Version Name: 1.00_2412271145
+       Board Name: ats3085s4_dev_watch_ext_nor
+z_sys_init entry(0x1100cc18) func:0x11000e95
+I: pmu wakeup pending:0x0
+reboot_type0x0, reason=0x0
+libboot: version 1.0.2 ,release time: May 16 2024:20:29:55
+boot main=0 
+app offset=0x24000 ,crc=0
+code len use default
+app c
+[10:23:48.868] 接收:
+ ode len =0x800000
+
+[10:23:48.938] 接收:
+ ���
+[10:23:48.946] 接收:
+ �
+[10:23:48.947] 接收:
+ �
+[10:23:48.962] 接收:
+ �
+[10:23:48.963] 接收:
+ ��
+[10:23:48.975] 接收:
+ ��
+[10:23:48.979] 接收:
+ �
+[10:23:48.984] 接收:
+ ]j吜隶節乼o 0x12000000, koff=0x1017ae60
+xip sdfs check:xip off=
+[10:23:48.985] 接收:
+ 0x10181000
+dir:num=9, size=24384, ck=0x9,0x71ff051c
+1 check  s
+[10:23:48.989] 接收:
+ tart: off=0x160, size=0xa, ck=0x6c6a6866
+2 check  start: off=0x1a0, size=0xb50, ck=0xcf345bdd
+3 check  start: off=0xd20, size=0x3a80, ck=0x3a020366
+4 check  start: off=0x47a0, size=0xcea, ck=0x9853ff43
+5 check  start: of
+[10:23:48.991] 接收:
+ f=0x54a0, size=0xcd, ck=0xc4a07039
+6 check  start: off=0x5580, size=0x10, ck=0x2199aca9
+7 check  start: off=0x55a0, size=0x210, ck=0x21439b85
+8 check  start: off=0x57c0, size=0x10, ck=0x2199aca9
+9 check  start: off=0x57e0, size=0x744, ck=0x3af2454f
+sdfs check ok, 3 ms 
+z_sys_init dev(sys_clock) func:0x10035e81
+z_sys_init dev(hrtimer) func:0x100362b5
+z_sys_init dev(PMUADC_0) func:0x10052015
+z_sys_init dev(batadc) func:0x100548c5
+[bat_drv][I][1896*]:bat drv init....
+
+[bat_ctl][I][34*]:bak_PMU_CHG_CTL:0x110a4e1; rb_PMU_CHG_CTL:0x110a4e1
+
+
+[bat_ctl][I][34*]:bak_PMU_CHG_CTL:0x130a4e1; rb_PMU_CHG_CTL:0x130a4e1
+
+
+[bat_drv][I][1915*]:bat drv get config!
+
+[bat_drv][I][898*]:Bat Config Start:
+
+[bat_drv][I]
+[10:23:48.994] 接收:
+ [899*]:Charge Mode: back
+
+[bat_drv][I][900*]:CC: 450ma, CV: 4200mv
+
+[bat_drv][I][903*]:Stop: 2, 4160mv, 20
+
+[bat_drv][I][906*]:Mini Charge: 1, 30ma, 3000mv, 70ma, 3200mv, 100ma, 3400mv
+
+[bat_drv][I][914*]:Pre-charge: 1, 3300mv, 1, 8
+
+[bat_drv][I][918*
+[10:23:48.994] 接收:
+ ]:Fast Charge: 0, 450ma, 5
+
+[bat_drv][I][922*]:Re-charge: 1, 4110mv, 4110mv, 3900mv
+
+[bat_drv][I][927*]:OVP: 1, 4260mv, 4260mv, 4100mv
+
+[bat_drv][I][932*]:Total_Time_Limit: 240min
+
+[bat_drv][I][933*]:Check_Period: 60s
+
+[bat_drv][I][934*]:Charge_Check_Period: 300s
+
+[bat_drv][I][935*]:Full_Continue: 420s
+
+[bat_drv][I][936*]:Poff_Wait: 10s
+
+[bat_drv][I][937*]:DC5V_Dbs: 300ms
+
+[bat_drv][I][938*]:Bat_Rdrop: 500m
+
+[bat_drv][I][940*]:Bat Config End!
+
+[bat_ctl][I][209*]:PMUADC_DIGCTL:0x80800812
+
+[bat_dr
+[10:23:48.996] 接收:
+ v][I][976*]:setup batadc channel!
+
+[pmuadc0][I][510*]:Enable PMU ADC channel@1
+
+[bat_drv][I][983*]:setup chargei channel!
+
+[p
+[10:23:48.997] 接收:
+ muadc0][I][510*]:Enable PMU ADC channel@0
+
+[bat_drv][I][990*]:setup dc5v channel!
+
+[pmuadc0][I][510*]:Enable PMU ADC channel@2
+
+adc setto alwayson=0x7
+[bat_drv][I][2008*]:get bat_mv_pstore=0mv.
+
+
+[bat_ctl][I][34*]
+[10:23:48.999] 接收:
+ :bak_PMU_CHG_CTL:0x130a0e1; rb_PMU_CHG_CTL:0x130a0e1
+
+
+[bat_ct
+[10:23:48.999] 接收:
+ l][I][34*]:bak_PMU_CHG_CTL:0x130a4e1; rb_PMU_CHG_CTL:0x130a4e1
+
+
+[bat_drv][I][2019*]:0, bat_mv from adc: 3759
+
+[bat_ctl][I][34*]:bak_PMU_CHG_CTL:0x130a0e1; rb_PMU_CHG_CTL:0x130a0e1
+
+
+[bat_ctl][I][34*]:bak_PMU_CHG_CTL:0x130a4e1; rb_PMU_CHG_CTL:0x130a4e1
+
+
+[bat_drv][I][2019*]:1, bat_mv from adc: 3759
+
+[bat_ctl][I
+[10:23:49.002] 接收:
+ ][34*]:bak_PMU_CHG_CTL:0x130a0e1; rb_PMU_CHG_CTL:0x130a0e1
+
+
+[bat_ctl][I][34*]:bak_PMU_CHG_CTL:0x130a4e1; rb_PMU_CHG_CTL:0x130a4e1
+
+
+[bat_drv][I][2019*]:2, bat_mv from adc: 3759
+
+[bat_ctl][I][34*]:bak_PMU_CHG_CTL:0x130a0e1; rb_PMU_CHG_CTL:0x130a0e1
+
+
+[bat_ctl][I][34*]:bak_PMU_CHG_CTL:0x130a4e1; rb_PMU_CHG_CTL:0x130a4e1
+
+
+[bat_drv][I][2019*]:3, bat_mv from adc: 3759
+
+[bat_
+[10:23:49.006] 接收:
+ drv][I][2027*]:bat_real_volt=3759mv.
+
+
+[bat_drv][I][2030*]:power on, no dc5v!
+
+[bat_ctl][I][75*]:vd12 sw dcdc; vc18 sw dcdc.
+[10:23:49.007] 接收:
+ 
+[bat_drv][I][2074*]:bat driver init ok,so enable peripheral_power!
+
+
+
+adc setto not alwayson=0x7
+z_sys_init dev(sim_flash) func:0x1004408d
+panic=0, flash data checksum abdecb9c
+flash init data checksum fffff000
+z_sys_init entry(0x10139658) func:0x10031251
+z_sys_init dev(DMA_0) func:0x10043bc1
+dma-num=10
+z_sys_init entry(0x10139668) func:0x1003e7b5
+board_later_init 529: 
+z_sys_init entry(0x10139670) func:0x1003f021
+[coredump][I][143*]:init coredump config
+
+[coredump][I][149*]:coredump:0x1d2000
+[10:23:49.010] 接收:
+ ,0xa000
+
+
+init coredump storage
+z_sys_init dev(I2C_0) func:0x10042bd5
+i2c0:clk=100000,cmd=0,dma=0
+z_sys_init dev(I2CMT_0) f
+[10:23:49.010] 接收:
+ unc:0x10043055
+[i2cmt_acts][I][176*]:I2CMT0 expected rate 400000Hz, real rate 400000Hz, cmudiv=1, i2cmtdiv=5
+
+z_sys_init dev(DAC_0) func:0x1004c285
+DAC init successfully
+z_sys_init dev(I2STX_0) func:0x1004dd95
+I2STX init successfully
+z_sys_init dev(ADC_0) func:0x1004eb11
+ADC init successfully
+z_sys_init dev(I2SRX_0) func:0x1004f951
+I2SRX init successfully
+z_sys_init entry(0x101396a8) func:0x100327e5
+z_sys_init entry(0x101396b0) func:0x100329c1
+nor disk:ext nor
+[partition][I][251*]:found write part 20 for file_id 0x28
+
+
+nor_disk_init,size=0x2180, off=0x2ab8 secotr
+z_sys_init entry(0x101396b8) func:0x100385a5
+z_sys_init entry(0x101396c0) func:0x100385dd
+z_sys_init entry(0x101396c
+[10:23:49.013] 接收:
+ 8) func:0x10040fe5
+z_sys_init dev(BTC) func:0x1010f9b1
+z_sys_i
+[10:23:49.013] 接收:
+ nit dev(audio_out) func:0x10048da1
+[dac0][I][1567*]:DAC wait for capacitor charge full
+
+
+
+
+
+[1;32muart:~$ [m
+[10:23:49.025] 接收:
+ �
+[10:23:49.161] 接收:
+ [dac0][E][2091*]:wait dac fifo(0) empty(0x0) timeout
+
+[aout][I][1259*]:session#0@0x38015f74 closed
+
+[aout][I][390*]:Open PA successfully
+
+ACTS-AUDIO OUT initialized
+z_sys_init entry(0x101396e0) func:0x10051795
+z_sys_init entry(0x101396e8) func:0x100e0029
+z_sys_init entry(0x101396f0) func:0x100484c5
+init nvram storage
+z_sys_init entry(0x101396f8) func:0x1002f0f5
+z_sys_init dev(de_
+[10:23:49.163] 接收:
+ acts) func:0x10035929
+DE: set rate 200000000 Hz, real rate 1866
+[10:23:49.165] 接收:
+ 66666 Hz
+z_sys_init dev(dma2d_lite_acts) func:0x10035d7d
+z_sys_init dev(jpeg_hw_acts) func:0x100368e9
+z_sys_init dev(gpu) func:0x10037451
+GPU: set rate 200000000 Hz, real rate 186666666 Hz
+z_sys_init dev(lcdc_acts) func:0x1010f8b5
+z_sys_init entry(0x10139728) func:0x10046d75
+bt hci drv register
+z_sys_init dev(audio_in) func:0x1004a001
+ACTS-AUDIO IN initialized
+z_sys_init 
+[10:23:49.167] 接收:
+ dev(DSP) func:0x100509ed
+z_sys_init dev(onoffkey) func:0x100521b9
+z_sys_init dev(RTC_0) func:0x100568a1
+[pmu0][I][332*]:pmu wakeup pending:0x80
+
+
+[10:23:49.171] 接收:
+ [pmu0][I][789*]:cal freq=32830, ctl=0x2c
+
+
+cur rc32k_freq=3283
+[10:23:49.171] 接收:
+ 0
+[pmu0][E][541*]:counter8hz does not enable yet
+
+[rtc0][E][67
+[10:23:49.173] 接收:
+ 6*]:failed to get counter8hz
+
+rtc initialized
+z_sys_init dev(ALARM8HZ_0) func:0x10056de1
+alarm8hz initialized
+z_sys_init dev(PWM) func:0x10056f09
+z_sys_init dev(VIBRATOR) func:0x1005750d
+z_sys_init dev(uart_comm) func:0x100378bd
+uart use txdma chan=7
+uart use rxdma chan=6
+[comm_9207][I][401*]:[UNICAIR] Device 
+[10:23:49.173] 接收:
+ initialization 
+
+
+z_sys_init dev(keygpio) func:0x100522a1
+z_s
+[10:23:49.176] 接收:
+ ys_init dev(tpkey) func:0x10052d99
+
+[10:23:49.177] 接收:
+ 
+Thread 0x38012230 main       run time 16 ms
+
+[10:23:49.642] 接收:
+ z_sys_init dev(lcd_panel) func:0x10035115
+[lcd_panel][I][943*]:
+[10:23:49.643] 接收:
+ panel late-resume
+
+z_sys_init entry(0x10139788) func:0x100334f5
+sdfs fs_register=0
+z_sys_init entry(0x10139790) func:0x1003f4
+[10:23:49.650] 接收:
+ 25
+[partition][I][251*]:found write part 18 for file_id 0xfe
+
+
+[ramdump][I][764*]:init compr_buf 0x2ffc85dc
+
+*** Booting Zephyr OS version 2.7.0  ***
+z_sys_init entry(0x10139798) func:0x1
+[10:23:49.653] 接收:
+ 0033dc9
+printk_dma_init
+uart use txdma chan=2
+z_sys_init entry(0x101397a0) func:0x10034af1
+***  Current Firmware Version  ***
+ Firmware Version: 0x00010000
+ res Version: 0x00010000
+   System Version: 0x00000000
+     Version Name: 1.00_2412271145
+       Board Name: ats3085s4_dev_watch_ext_nor
+z_sys_init entry(0x101397a8) func:0x100134f5
+z_sys_init entry(0x101397b0) func:0x10016791
+z_sys_init entry(0x101397b8) func:0x100340ad
+arm mpu init
+mpu 0(8): 0x0-0xffff, set=0x0-0x10000,attr=RO
+mpu 1(8): 0x10000000-0x10ffffff, set=0x10000000-0x11000000,attr=RO
+mpu 2(8): 0x38000000-0x3800095f, set=0x38000000-0x38000968,attr=RO
+arm trace dump:
+31000000:963d6a3c 46539233 585c90ea 40a2c233 37d4c645 778d4dd4 16ad71b5 0e887beb 
+31000020:556edbd4 cfd6b634 04ff7eb3 87c05152 65bf09e0 5d03ae1c c6abf5ff 2bcc5054 
+31000040:7e2d87d6 27ad7909 f5a323d2 54676441 a1e804ea 51a4ef06 97ec05bf c1426256 
+31000060:676015ab 3ed22634 5bf722ba 4db07efe b5d9c016 42042942 f5617814 d3f93ec2 
+31000080:fe2ad773 cdcb8e1a 211b004a 5d393002 077b7d03 d01fedc7 ebbba915 5331fa1d 
+310000a0:9df9229d b1ed8f0c b338470f 13b0b44b a4f7e5da 2dd8440e 0329a5ec 58843de4 
+310000c0:bde5e6bd d5804b53 cfb3ed7c 004c9926 13fe3fa7 ed38566e 
+[10:23:49.656] 接收:
+ 2fda47fc 5c7098a1 
+310000e0:acaa1d5e 0e642e3b 58799228 7d89e4e9 3b9cdaff 42900d96 1ad34807 11cd03b4 
+31000100:cad1e63d 2e808321 7331f74d 9fede975 c7ad2e9d b1840821 1af49721 46cb2616 
+31000120:8396d215 38fa889c 87b713fd c98cae03 bc25c5ef 82a00c4b b384e76b 93a17dc2 
+31000140:6576433e 82c7e208 64024eb3 b37ffbd9 d45686
+[10:23:49.657] 接收:
+ 70 0b316130 cfa02c38 03345135 
+31000160:cdffaaa0 ecb22898 81a7ded9 4b084c03 e77cb4e2 84122152 bc75041a afd6608b 
+31000180:15cdd68f ea20449c 3c07879c 6d3f2440 359b9f6f ae04e15c a21de413 4c1f51de 
+310001a0:412b4fb7 13e01f96 aa7b4c8e b0c85d23 ff8977d5 c0bf7fb2 68f52daf 9266b743 
+310001c0:267adf39 9e5d59aa 91f7e123 324
+[10:23:49.660] 接收:
+ 73ede 8c9843a8 3f8fe326 921143b6 98af0a88 
+310001e0:ff5afb13 2f
+[10:23:49.660] 接收:
+ 89bcb6 368a4f92 e33a6696 d50658bf 58980457 ba99488c 4a4d84e0 
+31000200:29d1c1fa 90615899 0e297acb 6e24277b 2e0eed1e 06cb1c42 f2976db8 0c372662 
+31000220:7a166966 48b2c46a fbc8d34c 5e6c1582 92f8dec0 c5712446 36813edf 18cce5ce 
+31000240:36d61fca c3e28df5 51eb0049 a9089777 4d08f227 fb64bb40 e5fd1ad3 6e321403 
+31000260
+[10:23:49.662] 接收:
+ :937dd883 204b3454 883be853 4e895881 04cad019 3d9a8830 e141b5e2 
+[10:23:49.662] 接收:
+ b864397d 
+31000280:be26ac89 a5d4baf2 295dc1a8 8564c10c ac2b69ae 4c92caf8 b466a4a9 edc003e7 
+310002a0:4359f27d 42a7a0d1 c315ea73 ffd12caa a0c1d084 40a9b032 8d4d09cc 5ccca90a 
+310002c0:93399f
+[10:23:49.664] 接收:
+ 7f 3b733053 ec31d55a fbe2a8b7 1d4c5629 d104ba35 0c74c86e 0c72da23 
+310002e0:baf4e7fc feb0b315 aa6efe15 8a363119 febe02d7 db1fd0e0 b4bcc42d 1b3df899 
+31000300:f3e11edc 6f6330a7 3efc4e8c 983fb
+[10:23:49.665] 接收:
+ db4 baf75ec0 6321a51a 1c3195ea b3e9f5e3 
+31000320:a9d8e4d3 70946e28 599b9a76 d3f350de cdb4fbc3 d2712e91 1485fcd0 c3ee9c24 
+310
+[10:23:49.667] 接收:
+ 00340:aee6e159 90910fcd 89cbfdc1 e0ac2257 f9d02d6c a8210da5 abc8
+[10:23:49.667] 接收:
+ c1d5 4cee900f 
+31000360:f14c151f d3c89896 6a0a9052 3f22b8ad b46e3d78 c5d5a018 7316834b 18c58803 
+31000380:d7ffb76d 98951a89 bc
+[10:23:49.668] 接收:
+ 7f29d3 1e7f4c58 5747bf59 d6299c23 4450df92 ba97958e 
+310003a0:96344f4f 83c6ff12 8b5aa774 1e8de44b b2bfafdf d70129fe 312002df c4
+[10:23:49.670] 接收:
+ e80215 
+310003c0:0b8527f5 5a163485 86cbf9dd 52dd2bb6 1d3f29e2 c7b067bf 7bdeb157 a34449b8 
+310003e0:2395abbd 08a88cc5 bb12c6db 
+[10:23:49.671] 接收:
+ 4f427348 6d90837e bd8d40dd 10d67b9f 4a6c7cf8 
+
+z_sys_init entr
+[10:23:49.671] 接收:
+ y(0x101397c0) func:0x1010eddb
+z_sys_init entry(0x101397c8) func:0x10041c39
+
+Thread 0x38012230 main       run time 28 ms
+z_sys_init entry(0x101397d0) func:0x1003c8ed
+!!!ERR: dev SPIMT_0 no
+[10:23:49.672] 接收:
+ t found
+!!!ERR: dev SPIMT_1 not found
+!!!ERR: dev I2CMT_1 not 
+[10:23:49.673] 接收:
+ found
+[os][E][540*]:[i2cmt1] get device failed!
+
+z_sys_init entry(0x101397d8) func:0x1003cd85
+z_sys_init entry(0x101397e0) func:0x1003d1ed
+z_sys_init entry(0x101397e8) func:0x10059d39
+z_sys_init entry(0x101397f0) func:0x1002cfb1
+z_sys_init entry(0x10
+[10:23:49.674] 接收:
+ 1397f8) func:0x100e127d
+z_sys_init entry(0x10139800) func:0x1002d5bd
+[lcd_panel][I][960*]:panel resuming
+
+ch2: adc=104, mv=153
+LCD: set rate 20000000 Hz, real rate 15555555 Hz
+[unicair]_tpkey_init_work*** !tpkey->inited
+[unicair]axs_upgrade_enter****star
+[tpkey][I][1003*]:[unicair] axs_upgrade_enter*** start 
+
+[10:23:49.675] 接收:
+ 
+ch1: adc=12794, mv=3748
+int battery first insert, poweroff
+
+[10:23:49.686] 接收:
+ factory power down WKEN_CTL=0xc010a105
+dev power off
+[lcd_pane
+[10:23:49.686] 接收:
+ l][I][925*]:panel early-suspend
+
+
+[10:23:49.769] 接收:
+ [lcd_panel][I][1087*]:panel turn-off
+
+dev power end
+
+[10:24:08.760] 接收:
+ �
+[10:24:08.767] 接收:
+ �����
+[10:24:08.774] 接收:
+ �
+[10:24:08.777] 接收:
+ �
+[10:24:08.777] 接收:
+ ���
+[10:24:09.245] 接收:
+ z_s���������
+[10:24:09.245] 接收:
+ ��������
+[10:24:09.253] 接收:
+ ���������
+[10:24:09.259] 接收:
+ c蟪fc�5e539疋斌恸�53螯眅253聒1�3�1�382�9�31�3狁<骳���9�368
+[10:24:09.271] 接收:
+ 骹篪砪e�cce�8�831e323耨63�1耱7鎐6132�=3=3�93�2鈌�5恻3292
+[10:24:09.275] 接收:
+ 33黤59c怦33c�5狳f�6�39693e獬�e28醕�3e�3cf��853936g1裹�3鈌�a鴉�13f6�9�619获7�5點�1c;2=8鮢�3f��63鱢�7簖3�9�1�5簏3=889�恻
+[10:24:09.287] 接收:
+ 3c3�58�55c73�322恻6�1鼁_s�������������
+[10:24:09.287] 接收:
+ ������������������������������
+[10:24:09.290] 接收:
+ ���������
+[10:24:09.292] 接收:
+ ��
+[10:24:09.296] 接收:
+ [os��
+[10:24:09.297] 接收:
+ [��
+[10:24:09.318] 接收:
+ [os�
+[10:24:09.327] 接收:
+ [|������[}
+[10:24:09.328] 接收:
+ ��
+[10:24:09.337] 接收:
+ [o{
+[10:24:09.359] 接收:
+ [os�
+[10:24:09.378] 接收:
+ [�����������
+[10:24:09.378] 接收:
+ ������
+[10:24:09.384] 接收:
+ �����s��[����
+[10:24:09.384] 接收:
+ [v�[os���
+[10:24:09.389] 接收:
+ ������~��
+[10:24:09.392] 接收:
+ lo�
+[10:24:09.392] 接收:
+ lo���lo��
+[10:24:09.394] 接收:
+ �
+[10:24:09.395] 接收:
+ lo�
+[10:24:09.396] 接收:
+ ����l����
+[10:24:09.397] 接收:
+ ����
+[10:24:09.399] 接收:
+ �
+[10:24:09.400] 接收:
+ ��������������
+[10:24:09.401] 接收:
+ ���
+[10:24:09.402] 接收:
+ �
+[10:24:09.402] 接收:
+ �����
+[10:24:09.404] 接收:
+ �������
+[10:24:09.405] 接收:
+ ��
+[10:24:09.407] 接收:
+ ��
+[10:24:09.408] 接收:
+ ��
+[10:24:09.409] 接收:
+ �
+[10:24:09.414] 接收:
+ ���
+[10:24:09.415] 接收:
+ ]�
+[10:24:09.415] 接收:
+ ���
+[10:24:09.419] 接收:
+ 
+[10:24:09.425] 接收:
+ ���
+[10:24:09.426] 接收:
+ 3
+[10:24:09.431] 接收:
+ ��
+[10:24:09.432] 接收:
+ �
+[10:24:09.434] 接收:
+ 7���
+[10:24:09.509] 接收:
+ ��
+[10:24:09.517] 接收:
+ ����������
+[10:24:09.521] 接收:
+ ��/�
+[10:24:09.521] 接收:
+ ����[���
+[10:24:09.523] 接收:
+ ���
+[10:24:09.525] 接收:
+ �����������������������������������
+[10:24:09.527] 接收:
+ �����魁�����
+[10:24:09.528] 接收:
+ ��
+[10:24:09.528] 接收:
+ �������
+[10:24:09.531] 接收:
+ ��������
+[10:24:09.532] 接收:
+ ������������
+[10:24:09.532] 接收:
+ ��
+[10:24:09.533] 接收:
+ �
+[10:24:09.535] 接收:
+ ���������
+[10:24:09.612] 接收:
+ ��
+[10:24:09.613] 接收:
+ ��
+[10:24:09.619] 接收:
+ ��
+[10:24:09.621] 接收:
+ �����������
+[10:24:09.632] 接收:
+ [��
+[10:24:09.654] 接收:
+ [o�
+[10:24:09.675] 接收:
+ [��
+[10:24:09.683] 接收:
+ ���
+[10:24:09.692] 接收:
+ [�
+[10:24:09.694] 接收:
+ ��
+[10:24:09.697] 接收:
+ [o�
+[10:24:09.709] 接收:
+ [�
+[10:24:09.713] 接收:
+ c���
+[10:24:09.715] 接收:
+ [o�
+[10:24:10.333] 接收:
+ [bat_sts][I][908]: check real voltage!
+[bat_drv][I][781]: last: 788, 1743
+[bat_drv][I][792]: vol:3743mv, permillage: 486, elap
+[10:24:10.334] 接收:
+ se_sec: 0鸆�+}懮冽�趬呇}懮賣m%um�46]: last time_ms: 1743
+
+[ba
+[10:24:10.348] 接收:
+ t_drv][I][849]: bat_real_vol change: 3744 -- 3743
+[os][I][73]: event 7
+
+[os][I][86]: voltage change 3743000 uV
+
+[os][I][73]: 
+[10:24:10.348] 接收:
+ event 8
+
+[os][I]��H.W褧� CHG_INIT; new state: CHG_NORMAL
+
+[10:24:10.524] 接收:
+ libbtstack: version 1.0.8, release time: May 16 2024:21:40:18
+l
+[10:24:10.525] 接收:
+ ibbtstack: release tag 2404240.
+
+[10:24:10.533] 接收:
+ sdfs:stor_id=0, p=255
+bttbl.bin size: 3306, load: 3306
+opt:1 Befor set 0x42 = 0xc 0x43 = 0x80 0x44 = 0x20
+get efuse avdd ret:0 value:9 default 0
+get efuse power version ret:0 value:2 default 0
+get efuse rf ret:0 value:a10011 default 0
+Bt uart rate 2000000
+max rf power 38
+After set 0x42 = 0xf 0x43 = 0xb4 0x44 = 0x24
+sdfs:stor_id=0, p=255
+bt_pth.bin size: 14976, load: 14976
+Set hosc cap 10.0 pf
+[os][I][745]: alarm=0
+
+[os][I][168]: init
+[os][I][43]: file /NOR:/ota.bin not found 
+[os][I][235]: failed to init sdcard ota
+[bt_drv][I][1147]: efuse cap valid 0 cap 100
+[os][I][1056]: Get bqb mode 0
+[os][I][1176]: Register efuse_bdg_val: 0x12 BDG_CTL_SVCC 0x558652
+[os][I][1185]: NVRAM efuse_bdg_val: 0x12 BDG_CTL_SVCC 0x558652
+[bt_hci_core][I][10895]: pincode 0
+
+[os][I][179]: BT MAC: 50c0f0b2a017
+
+[os][I][136]: BT_NAME: LEOPARD_50c0f0b2a017
+
+[os][I][136]: BT_LE_NAME: LEOPARD_50c0f0b2a017
+
+[os][I][69]: Register 200 processer
+
+[os][I][69]: Register 201 processer
+
+[os][I][69]: Register 204 processer
+
+[os][I][69]: Register 206 processer
+
+[os][I][69]: Register 202 processer
+
+[os][I][
+[10:24:10.536] 接收:
+ 69]: Register 203 processer
+
+[os][I][69]: Register 207 processe
+[10:24:10.539] 接收:
+ r
+
+[os][I][69]: Register 208 processer
+
+[os][I][69]: Register 211 processer
+
+[os][I][69]: Register 209 processer
+
+[os][I][1435]: init ok!
+[os][I][70]:  0x20000001
+
+[os][I][523]: wakeup_time 1243 ms
+
+[os][I][817]: mode 2 , bat_val 4
+
+[os][I][346]: 3743000 3770000 low
+[os][I][70]:  0x4000001
+
+[os][I][523]: wakeup_time 1243 ms
+
+[os][E][194]: app  not ready
+
+
+[bt_drv][I][1282]: bt driver init
+[bt_drv][I][1094]: Bt share ram size 10240
+[10:24:10.539] 接收:
+ 
+[bt_drv][I][1098]: msg tx id: 324, msg rx id: 596
+[bt_drv][I][1102]: log id: 868
+[bt_drv][I][1107]: hci rx id: 1148, hci tx id: 5268
+[bt_drv][I][1112]: bt info id: 7340 0x2ff19cbc
+[bt_drv][I][1118]: tws0 rx id: 7492, tx id: 7540
+[bt_drv][I][1118]: tws1 rx id: 7588, tx id: 7636
+[bt_drv][I][810]: rx thread started
+[bt_drv][I][303]: log thread started
+[bt_drv][I][1700]: bt monitor thread started
+[view][I][317]: view 13 defocused
+[view][I][185]: view 13 pause draw (0x100bd341)
+[os][I][151]: CMY: _we
+[10:24:10.541] 接收:
+ lcome_view_handler---MSG_VIEW_DELETE
+
+[10:24:10.563] 接收:
+ [view][I][690]: view 13 deleted
+
+
+[10:24:10.575] 接收:
+ HOSC_CTL = 0x36c8f7f6 HOSCLDO_CTL = 0x800a9a04
+[bt_drv][I][1384]: wait bt cpu ready...
+[BTC] ini 10b400
+[BTC] bt up
+[BTC] <C
+[10:24:10.576] 接收:
+ T-I> patch build info: 
+[BTC] RF_VER_2_5 BB_VER_3_2 BOARD_DEFAU
+[10:24:10.581] 接收:
+ LT
+[BTC] SVN:1788 @2024/04/17 13:55:44
+[BTC] BIA 1069cbc
+[BTC] cnt 15648
+
+[10:24:10.581] 接收:
+ [BTC] ic pkg 0xc id 0x0 dut 0
+[BTC] efuse set 1 rf 0xa10011 pcb 0x0
+�BTC] efuse power_ver 2 avdd_if 9
+[BTC] rf_init_func 0x00000000
+[BTC] p_txp_t 0x00104d44 p_pga_t 0x00104af4
+[BTC] RP15:0_495
+[BTC] RP16:0_499
+[BTC] RP17:0_49d
+[BTC] RP18:0_4a1
+[BTC] RP19:0_4a5
+[BTC] RP20:0_4a9
+[BTC] RP21:0_1e8d
+[BTC] RP22:0_1e91
+[BTC] RP23:0_1e95
+[BTC] RP24:0_1e99
+[BTC] RP25:0_1e9d
+[BTC] RP26:0_1ea1
+[BTC] RP27:0_1ea5
+[BTC] RP28:0_1ea9
+[BTC] RP29:1_bd1
+[BTC] RP30:1_bd5
+[BTC] RP31:1_bd9
+[BTC] RP32:1_bdd
+[BTC] RP33:1_be1
+[BTC] RP34:1_be5
+[BTC] RP35:1_be9
+[BTC] RP36:1_bed
+[BTC] RP37:1_bf1
+[BTC] RP38:a_33e5
+[BTC] RP39:a_33e9
+[BTC] RP40:a_33ed
+[BTC] RP41:0_17f0
+[BTC] RP42:0_17f4
+[BTC] RP43:0_17f8
+[BTC] RP44:0_1ff6
+[BTC] RP45:0_1ffa
+
+[10:24:10.625] 接收:
+ [os][I][74]: type: 6 state: 2
+
+
+[10:24:10.848] 接收:
+ TX: 01 03 0c 00
+[BTC] miss cnt 44
+^14-5-6
+^14-6-2a
+[BTC] ^14
+[10:24:10.849] 接收:
+ -5-b
+[BTC] ^14-6-29
+[BTC] ^14-5-11
+[BTC] ^14-6-28
+[BTC] ^14-
+[10:24:10.857] 接收:
+ 5-16
+[BTC] ^14-6-27
+[BTC] ^14-5-1d
+[BTC] ^14-6-26
+[BTC] ^14-5-22
+[BTC] ^14-6-25
+[BTC] ^14-5-28
+[BTC] ^14-6-24
+[BTC] ^14-5-2d
+[BTC] ^14-6-23
+[BTC] ^14-5-32
+^14-6-22
+[BTC] ^14-5-38
+
+[10:24:10.858] 接收:
+ [BTC] ^14-6-21
+[BTC] ^14-5-3d
+[BTC] ^14-6-20
+[BTC] ^14-5-43
+[BTC] ^14-6-1f
+[BTC] ^14-5-47
+[BTC] ^14-6-1e
+[BTC] ^14-5-4d
+[BTC] ^14-6-1d
+[BTC] ^14-5-52
+[BTC] ^14-6-1c
+[BTC] ^14-0-1
+[BTC] ^15-a-0
+[BTC] ^2-a-0
+[BTC] mem info: 1_1_1_1_0_916
+[BTC] mem info: 1_1_1_1_12_28
+[BTC] mem info: 2_2_3_3_1748_3844
+RX: 04 0e 04 01 03 0c 00
+TX: 01 03 10 00
+[BTC] ^3-79-0
+^11-0-2
+^11-1-2
+[BTC] ^15-a-0
+[BTC] RX:04 0e 04 01 03 0c 00 
+RX: 04 0e 0c 01 03 10 00 bf ee 0f fa d8 3d 7b 87
+TX: 01 01 10 00
+[BTC] TX:01 03 10 00 
+[BTC] RX:04 0e 0c 01 03 10 00 bf ee 0f fa d8 3d 7b 87 
+RX: 04 0e 0c 01 01 10 00 0c fc 06 0c e0 03 fc 06
+TX: 01 02 10 00
+[BTC] TX:01 01 10 00 
+[BTC] RX:04 0e 0c 01 01 10 00 0c fc 06 0c e0 03 fc 06 
+RX: 04 0e 44 01 02 10 00 b3 ff fb 03 cc ff 0f ff 0f ff
+ fc 1f f2 0f e8 fe 3f f7 8f ff 1c 00 04 00 61 f7
+ ff ff 7f 00 c0 ff ff f0 ff ff ff e3 80 04 00 e4
+ 1f fc
+TX: 01 18 20 00
+[BTC] TX:01 02 10 00 
+[BTC] RX:04 0e 44 01 02 10 00 b3 ff fb 03 cc ff 0f ff 0f ff 
+[BTC] fc 1f f2 0f e8 fe 3f f7 8f ff 1c 00 04 00 61 f7 
+[BTC] 
+RX: 04 0e 0c 01 18 20 0
+[10:24:10.863] 接收:
+ 0 6d 85 b1 8d d9 de 29 9a
+TX: 01 18 20 00
+[BTC] TX:01 18 20 00 
+RX:04 0e 0c 01 18 20 00 6d 85 b1 8d d9 de 29 9a 
+RX: 04 0e 0c 01 18 20 00 9f 95 38 f6 37 54 e8 c2
+TX: 01 18 20 00
+[BTC] TX
+[10:24:10.863] 接收:
+ :01 18 20 00 
+[BTC] RX:04 0e 0c 01 18 20 00 9f 95 38 f6 37 54 e8 c2 
+RX: 04 0e 0c 01 18 20 00 b5 d8 d4 99 cb ae bd d7
+TX: 01 18 20 00
+[BTC] TX:01 18 20 00 
+[BTC] RX:04 0e 0c 01 18 20 00 b5 d8 d4 99 cb ae bd d7 
+RX: 04 0e 0c 01 18 20 00 e6 b6 ba a4 e5 d4 06 2c
+TX: 01 18 20 00
+[BTC] TX:01 18 20 00 
+[BTC] RX:04 0e 0c 01 18 20 00 e6 b6 ba a4 e5 d4 06 2c 
+RX: 04 0e 0c 01 18 20 00 9f 90 37 bc cf 50 fb 8d
+TX: 01 03 20 00
+[BTC] TX:01 18 20 00 
+RX:04 0e 0c 01 18 20 00 9f 90 37 bc cf 50 fb 8d 
+RX: 04 0e 0c 01 03 20 00 7f 59 01 3c 00 00 00 00
+TX: 01 33 fc 08 7d 59 01 3c 00 00 00 00
+[BTC] TX:01 03 20 00 
+[BTC] RX:04 0e 0c 01 03 20 00 7f 59 01 3c 00 00 00 00 
+RX: 04 0e 04 01 33 fc 00
+TX: 01 03 20 00
+[BTC] TX:01 33 fc 08 7d 59 01 3c 00 00 00 00 
+RX: 04 0e 0c 01 03 20 00 7d 59 01 
+[10:24:10.866] 接收:
+ 3c 00 00 00 00
+TX: 01 02 20 00
+[BTC] TX:01 03 20 00 
+[BTC] RX
+[10:24:10.866] 接收:
+ :04 0e 0c 01 03 20 00 7d 59 01 3c 00 00 00 00 
+RX: 04 0e 07 01 02 20 00 fb 00 06
+TX: 01 6d 0c 02 01 00
+[BTC] TX:01 02 20 00 
+[BTC] RX:04 0e 07 01 02 20 00 fb 00 06 
+RX: 04 0e 04 01 6d 0c 00
+TX: 01 1c 20 00
+[BTC] TX:01 6d 0c 02 01 00 
+[BTC] RX:04 0e 04 01 6d 0c 00 
+RX: 04 0e 0c 01 1c 20 00 ff ff ff ff ff 03 00 00
+TX: 01 2f 20 00
+[BTC] TX:01 1c 20 00 
+[BTC] RX:04 0e 0c 01 1c 20 00 ff ff ff ff ff 03 00 00 
+RX: 04 0e 0c 01 2f 20 00 fb 
+[10:24:10.868] 接收:
+ 00 90 42 fb 00 90 42
+TX: 01 24 20 04 fb 00 90 42
+[BTC] TX:01 2f 20 00 
+[BTC] RX:04 0e 0c 01 2f 20 00 fb 00 90 42 fb 00 90 42 
+RX: 04 0e 04 01 24 20 00
+TX: 01 2a 20 00
+[BTC] TX:01 24 20 04 fb 00 90 42 
+[BTC] RX:04 0e 04 01 24 20 00 
+RX: 04 0e 05 01 2a 20 00 06
+TX: 01 01 20 08 9e 0b 00 00 00 00 00 00
+[BTC] TX:0
+[10:24:10.870] 接收:
+ 1 2a 20 00 
+[BTC] RX:04 0e 05 01 2a 20 00 06 
+RX: 04 0e 04 01 
+[10:24:10.870] 接收:
+ 01 20 00
+TX: 01 56 0c 01 01
+[BTC] TX:01 01 20 08 9e 0b 00 00 00 00 00 00 
+[BTC] RX:04 0e 04 01 01 20 00 
+RX: 04 0e 04 01 56 0c 00
+TX: 01 04 10 01 01
+[BTC] TX:01 56 0c 01 01 
+[BTC] RX:04 0e 04 01 56 0c 00 
+RX: 04 0e 0e 01 04 10 00 01 02 03 00 00 00 
+[10:24:10.871] 接收:
+ 00 00 00 00
+TX: 01 04 10 01 02
+[BTC] TX:01 04 10 01 01 
+[BTC] RX:04 0e 0e 01 04 10 00 01 02 03 00 00 00 00 00 00 00 
+[BTC] 
+RX: 04 0e 0e 01 04 10 00 02 02 00 00 00 00 00 00 00 00
+TX: 01 05 10 00
+[BTC] TX:01 04 10 01 02 
+[BTC] RX:04 0e 0e 01 04 10 00 02 02 00 00 00 00 00 00 00 00 
+
+RX: 04 0e 0b 01 05 10 00 fd 03 f0 06 00 14 00
+TX: 01 45 0c 01 02
+[BTC] TX:01 05 10 00 
+[B
+[10:24:10.872] 接收:
+ TC] RX:04 0e 0b 01 05 10 00 fd 03 f0 06 00 14 00 
+RX: 04 0e 04 
+[10:24:10.874] 接收:
+ 01 45 0c 00
+TX: 01 0f 08 02 05 00
+[BTC] TX:01 45 0c 01 02 
+[BTC] RX:04 0e 04 01 45 0c 00 
+RX: 04 0e 04 01 0f 08 00
+TX: 01 2f 0c 01 01
+[BTC] TX:01 0f 08 02 05 00 
+[BTC] RX:04 0e 04 01 0f
+[10:24:10.875] 接收:
+  08 00 
+RX: 04 0e 04 01 2f 0c 00
+TX: 01 24 0c 03 04 07 24
+[BT
+[10:24:10.875] 接收:
+ C] TX:01 2f 0c 01 01 
+[BTC] RX:04 0e 04 01 2f 0c 00 
+RX: 04 0e 04 01 24 0c 00
+TX: 01 13 0c f8 4c 45 4f 50 41 52 44 5f 35 30 63 30 66
+ 30 62 32 61 30 31 37 00 00 00 00 00 00 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00
+[BTC] TX:01
+[10:24:10.876] 接收:
+  24 0c 03 04 07 24 
+[BTC] RX:04 0e 04 01 24 0c 00 
+RX: 04 0e 04 01 13 0c 00
+TX: 01 52 0c f1 00 15 09 4c 45 4f 50 41 52 44 5f 35 30
+ 63 30 66 30 62 32 61 30 31 37 09 10 e0 03 ff ff
+ 01 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 00 00
+[BTC] TX:01 1
+[10:24:10.876] 接收:
+ 3 0c f8 4c 45 4f 50 41 52 44 5f 35 30 63 30 66 
+
+[BTC] RX:04 0
+[10:24:10.877] 接收:
+ e 04 01 13 0c 00 
+RX: 04 0e 04 01 52 0c 00
+TX: 01 18 0c 02 00 
+[10:24:10.877] 接收:
+ 20
+[BTC] TX:01 52 0c f1 00 15 09 4c 45 4f 50 41 52 44 5f 35 30 
+
+[BTC] RX:04 0e 04 01 52 0c 00 
+RX: 04 0e 04 01 18 0c 00
+TX: 01 01 0c 08 fd 8c ea 02 06 c8 2f 24
+[BTC] TX:01 18 0c 02 00 2
+[10:24:10.880] 接收:
+ 0 
+[BTC] RX:04 0e 04 01 18 0c 00 
+RX: 04 0e 04 01 01 0c 00
+TX: 01 25 20 00
+[BTC] TX:01 01 0c 08 fd 8c ea 02 06 c8 2f 24 
+RX:04 0e 04 01 01 0c 00 
+RX: 04 0f 04 00 01 25 20
+TX: 01 09 10 00
+[BTC] ^15-a-1
+TX:01 25 20 00 
+RX:04 0f 04 00 01 25 20 
+R
+[10:24:10.882] 接收:
+ X: 04 0e 0a 01 09 10 00 17 a0 b2 f0 c0 50
+work_q sysworkq 0x38012350 work 0x10095d21 run 32417 us!!!
+feed enty
+
+[BTC] TX:01 09 10 00 
+RX:04 0e 0a 01 09 10 00 17 a0 b2 f0 c0 50 
+
+[10:24:10.883] 接收:
+ ANAM I: state:0
+
+[10:24:10.883] 接收:
+ TX: 01 06 20 0f 40 01 90 01 00 00 00 00 00 00 00 00 00
+ 07 00
+RX: 04 0e 04 01 06 20 00
+TX: 01 08 20 20 09 02 01 02 05 03 36 55 22 22 00 00 00
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+[10:24:10.885] 接收:
+ 00
+ 00 00 00
+[BTC] TX:01 06 20 0f 40 01 90 01 00 00 00 00 00 0
+[10:24:10.886] 接收:
+ 0 00 00 00 
+
+[BTC] RX:04 0e 04 01 06 20 00 
+RX: 04 0e 04 01 08 20 00
+TX: 01 09 20 20 16 15 09 4c 45 4f 50 41 52 44 5f 35 30
+ 63 30 66 30 62 32 61 30 31 37 00 00 00 00 00 00
+ 00 00 00
+[B
+[10:24:10.886] 接收:
+ TC] TX:01 08 20 20 09 02 01 02 05 03 36 55 22 22 00 00 00 
+
+RX
+[10:24:10.887] 接收:
+ : 04 0e 04 01 09 20 00
+TX: 01 1e 0c 04 00 10 24 00
+[BTC] RX:04 0e 04 01 08 20 00 
+TX:01 09 20 20 16 15 09 4c 45 4f 50 41 52 44 5f 35 30 
+
+[BTC] RX:04 0e 04 01 09 20 00 
+RX: 04 0e 04 01 1
+[10:24:10.887] 接收:
+ e 0c 00
+TX: 01 43 0c 01 00
+[BTC] TX:01 1e 0c 04 00 10 24 00 
+[BTC] RX:04 0e 04 01 1e 0c 00 
+RX: 04 0e 04 01 43 0c 00
+TX: 01 1c 0c 04 00 08 24 00
+[BTC] TX:01 43 0c 01 00 
+[BTC] RX:04 0e 04 01 43 0c 00 
+RX: 04 0e 04 01 1c 0c 00
+TX: 01 47 0c 01 00
+A
+[10:24:10.889] 接收:
+ CTMODE=1001
+ACTMODE SET (1001)
+[BTC] TX:01 1c 0c 04 00 08 24 0
+[10:24:10.890] 接收:
+ 0 
+[BTC] RX:04 0e 04 01 1c 0c 00 
+RX: 04 0e 04 01 47 0c 00
+TX: 01 0a 20 01 01
+[BTC] TX:01 47 0c 01 00 
+[BTC] RX:04 0e 04 01 47 0c 00 
+RX: 04 0e 04 01 0a 20 00
+TX: 01 1a 0c 01 03
+[BTC] 
+[10:24:10.891] 接收:
+ ^a-a-17 a0 b2 f0 c0 50 
+[BTC] TX:01 0a 20 01 01 
+[BTC] RX:04 0e 04 01 0a 20 00 
+rtc_time: 2024-01-23  04:40:48:000
+RX: 04 0e 04 01 1a 0c 00
+[BTC] ^11-0-2
+[BTC] ^11-1-3
+[BTC] TX:01 1a 0c
+[10:24:10.891] 接收:
+  01 03 
+[BTC] RX:04 0e 04 01 1a 0c 00 
+
+[10:24:10.894] 接收:
+ sdfs:stor_id=0, p=0
+sdfs:stor_id=0, p=0
+sdfs:stor_id=0, p=0
+
+[10:24:10.919] 接收:
+ sdfs:stor_id=0, p=2
+
+[10:24:10.952] 接收:
+ rtc_time: 2024-01-23  04:40:48:030
+
+[10:24:10.959] 接收:
+ sdfs:stor_id=0, p=0
+
+[10:24:11.027] 接收:
+ public key: e1 85 7f 1d 5d 31 4e 39 65 78 26 0e 64 a7 ad 7f 
+84
+[10:24:11.027] 接收:
+  fc a7 c8 2b 0c 6c 78 a7 32 cc 2b 9b a5 62 b3 
+87 cb 41 1f a8 2
+[10:24:11.030] 接收:
+ 6 53 27 bd d8 d1 b0 9a 99 2e dd 
+private key: fc d9 8e 8d 10 51 67 19 45 0c b1 9e fb 6a 9d 07 
+e6 13 03 3e 3b 69 b2 0a 
+		>>>log drop:17
+
+
+[bt_drv][I][1386]: bt cpu ready
+[os][I][576]: bt name: LEOPARD_50c0f0b2a017
+
+[os][I][594]: BT_MAC: 50:C0:F0:B2:A0:17
+
+[bt_drv][I][415]: gen p192 public key
+[BTC] .-Max_hhc 1
+[BTC] ^1-1e-0
+
+[10:24:11.063] 接收:
+ public key: 1d 83 13 eb ab 53 bf 93 c3 1e 2b 49 e9 7a bf 00 
+f3
+[10:24:11.066] 接收:
+  64 ec ed a8 81 a3 91 87 11 00 d8 26 a9 ea 34 
+1b e0 fa 10 37 e
+[10:24:11.071] 接收:
+ 7 9a f5 22 b6 58 3a 91 32 0c 8f 
+private key: 6f fb 4f 4e 5f ef ec 78 0b db 66 f9 f1 07 02 70 
+88 30 0a 40 4b 0a 56 1d 
+[os][I][202]: ok
+
+[os][I][1401]: BHF bat rep
+[os][I][319]: err 0
+[os][I][610]: btsrv config info: 2, 1, 0
+[os][I][99]: allow sco 3->1 (2, 0)
+[BTC] .-^1-1e-0
+
+[10:24:11.150] 接收:
+ public key: 41 08 c7 88 94 5a 55 76 c3 14 fa b0 b7 72 cc a0 
+8a
+[10:24:11.152] 接收:
+  54 83 50 0c b9 86 59 ae a4 13 47 b5 b6 91 ba 
+19 01 ec b0 9d 4e cd d0 07 91 77 dc 57 a5 65 b7 
+d3 e8 06 9f 7d 52 b1 ea c9 5c 1e 4e eb 5c 29 1c 
+private key: 6c 32 c7 4f a5 6a d8 4c 39 b7 c
+[10:24:11.158] 接收:
+ e 22 92 75 8e 03 
+4a a6 60 b2 dd 66 4c d9 04 a7 3f 8e b8 bd fd 05 
+[logsrv][I][833]: logsrv: init
+
+[os][I][745]: alarm=0
+
+[os][I][203]: name:launcher plug in
+[os][I][92]: default_app: launcher
+
+[dvfs0][I][291]: level 60, is_set 1 switch
+[dvfs0][I][1
+[10:24:11.158] 接收:
+ 99]: max idx 4
+
+[os][I][171]: name:launcher
+RX: 04 3e 42 08 00 41 08 c7 88 94 5a 55 76 c3 14 fa b0
+ b7 72 cc a0 8a 54 83 50 0c b9 86 59 ae a4 13 47
+ b5 b6 91 ba 19 01 ec b0 9d 4e cd d0 07 91 77 dc
+ 57 a5
+[BTC] .-.-^1-1f-0
+[os][I][1497]: Ble start adv
+[os][I][1074]: Ble wake lock 1
+[BTC] RX:04 3e 42 08 00 41 08 c7 88 94 5a 55 76 c3 14 fa b0 
+[BTC] b7 72 cc a0 8a 54 83 50 0c b9 86 59 ae a4 13 47 
+[BTC] 
+[os][I][299]: Default param 0 1, 0x1000(0x24), 0x800(0x24)
+[os][I][299]: Enhance param 0 1, 0x1000(0x24), 0x800(0x24)
+[os][I][708]: btsrv a2dp start
+[os][I][729]: btsrv avrcp start
+[os][I][631]: MSG_BTSRV_SCO_START
+
+[os][I][1366]: BHF start
+[os][I][689]: cb 0x1008b3d5
+[bt_spp][I][528]: spp_id 128, channel 10
+
+[os][I][134]: Register spp, app_id 128, spp_id 128
+
+[os][I][142]: inquiry param: 0x1000, 0x24
+[os][I][153]: page param: 0x800, 0x24
+[os][I][168]:  app launcher is default app
+
+[dvfs0][I][291]: level 60, is_set 0 switch
+[dvfs0][I][199]: max idx 4
+
+[os][I][295]: spp uuid
+
+[os][I][1191]: init
+[os][I][584]: enter
+[os][I][574]: vendor service start
+[os][I][97]: 
+[os][I][168]: discoverable 1, connectable 1
+[os][I][1334]: launcher enter
+[os][E][82]: key STRING_ID value 0
+
+[os][I][254]: Advertising started speed 0
+[os][I][1108]: Ble htimer en 1 t 300000
+[os][I][1189]: ble_state 1 speed 0 adv_s
+[10:24:11.161] 接收:
+ tatus 1
+[os][I][202]: ok
+
+[rtc0][I][281]: set datetime: 2024-0
+[10:24:11.162] 接收:
+ 1-23  04:40:48:000
+[bt_spp][I][528]: spp_id 129, channel 11
+
+[os][I][134]: Register spp, app_id 129, spp_id 129
+
+[bt_spp][I][528]: spp_id 130, channel 12
+
+[os][I][134]: Register spp, app_id 130, spp_id 130
+
+[os][I][315]: heart_rate: 0
+[os][I][316]: step_count: 0
+[view][I][1754]: buf count 1
+[os][I][1626]: open sty file /NOR:A/bt_watch.sty
+
+
+[partition][I][251]: found write part 14 for file_id 0xa
+
+[os][I][1698]: open pic file /NOR:A/bt_watch.res
+
+
+[partition][I][251]: found write part 14 for file
+[10:24:11.164] 接收:
+ _id 0xa
+
+[os][I][1270]: id start 1, id_end 365
+
+[os][I][1708]: open text file /NOR:A/bt_watch.zhC
+
+
+[partition][I][251]: foun
+[10:24:11.164] 接收:
+ d write part 14 for file_id 0xa
+
+[os][I][1946]: scene id 0x5717fe0e, info sum 32 
+
+[os][I][2166]: 
+ ###  scene 0x5717fe0e, split total_size 0
+
+[os][I][2174]: 
+ ###  scene 0x5717fe0e, split total_size 201664
+
+[os][I][2496]: 
+ #### scene res 0x5717fe0e, total_size 89792
+
+
+[10:24:11.167] 接收:
+ [view_gesture][I][159]: gesture lock 1
+[view_gesture][I][172]: 
+[10:24:11.168] 接收:
+ gesture unlock 0
+[view][I][1224]: view 2 focus 1
+
+[view][I][424]: view 2 created (flags=0x2)
+
+[os][I][202]: ok
+
+[os][I][763]: try_cnt 10 space 0
+
+[view_cache][I][546]: view_cache: init 2, main 0 (res=0)
+[view][I][300]: view 2 focused (cnt=1, paused=0
+[10:24:11.168] 接收:
+ )
+[os][I][311]: rtc: en 1, period 1000
+[os][I][2722]: preload 
+[10:24:11.169] 接收:
+ view 2, status 0
+
+[os][I][2722]: preload view 2, status 1
+
+[vi
+[10:24:11.170] 接收:
+ ew][I][457]: view 2 layout started
+
+[os][I][1946]: scene id 0x5717fe0e, info sum 32 
+
+[os][I][379]: open ftxxx /NOR:C/vfont.ttf 22
+
+[partition][I][251]: found write part 15 for file_id 0xc
+
+[os][I][538]: cache_start 0x3835551c, cache_size 4096
+
+[os][I
+[10:24:11.172] 接收:
+ ][555]: metrics_buf 0x38355654, data_buf 0x38355da4, cached max 78
+
+[os][I][978]: font attr font size 22, per data size 0, max cached number 0
+
+[os][I][1068]: font size 22, asc 21, dsc -6, lineheight 27, base line 6, height 26
+
+[os][I][309]: bitmap font cache info dump: total used 16616, peak size 16616, max size 180000
+
+[os][I][390]: dsc->font 0x383525f4
+
+[os][I][414]: line h
+[10:24:11.173] 接收:
+ eight 27, base line 6, dsc 0x383549e4
+
+[os][I][763]: try_cnt 20
+[10:24:11.173] 接收:
+  space 0
+
+[os][E][1567]: Error in FT_Load_Glyph: 20, unicode 0x5468, glyf id 1
+
+[os][E][1568]: font /NOR:C/vfont.ttf, size 22, face 0x38354a24, size 0x38356524
+
+
+[os][E][1567]: Error in FT_
+[10:24:11.174] 接收:
+ Load_Glyph: 20, unicode 0x5468, glyf id 1
+
+[os][E][1568]: font 
+[10:24:11.175] 接收:
+ /NOR:C/vfont.ttf, size 22, face 0x38354a24, size 0x38356524
+
+
+[os][E][1567]: Error in FT_Load_Glyph: 20, unicode 0x4e94, glyf id 1
+
+[os][E][1568]: font /NOR:C/vfont.ttf, size 22, face 0x38354a24, size 0x38356524
+
+
+[os][E][1567]: Error in FT_Load_Glyph: 
+[10:24:11.176] 接收:
+ 20, unicode 0x4e94, glyf id 1
+
+[os][E][1568]: font /NOR:C/vfont.ttf, size 22, face 0x38354a24, size 0x38356524
+
+
+[view][I][466]: view 2 layout inflated
+
+[view_stack][I][501]: view_stack: jump 0 -> 2 (res=0)
+[os][I][397]: alarm[0]:state=1,alarm_time=0
+
+[10:24:11.176] 接收:
+ 
+[os][I][397]: alarm[1]:state=1,alarm_time=0
+
+[os][I][397]: ala
+[10:24:11.177] 接收:
+ rm[2]:state=1,alarm_time=0
+
+[view][I][497]: view 2 layout finis
+[10:24:11.178] 接收:
+ hed
+
+[os][I][59]: music_bp_info:time_offset=0,file_offset=0
+
+[os][I][145]: init ok
+
+[os][I][745]: alarm=0
+
+[view][I][853]: view 2 painted
+
+[composer][I][844]: post fps 27
+
+[os][I][1946]:
+[10:24:11.178] 接收:
+  scene id 0xcaedec57, info sum 32 
+
+[os][I][2625]: 
+ ###  scene
+[10:24:11.178] 接收:
+  0xcaedec57, total_size 34560
+
+[view][I][424]: view 6 created (flags=0x0)
+
+dsp_acts_send_message_response id 7 status 300  
+command id:0x00000120 0x0000000D 
+decoder_config:0x0000000D 
+co
+[10:24:11.181] 接收:
+ mmand id:0x00000122 0x0000000E 
+DSP STACK USED: 0x00000178 / 0x
+[10:24:11.181] 接收:
+ 00000500 
+command id:0x00000122 0x0000000F 
+DSP STACK USED: 0x00000178 / 0x00000500 
+mix disable
+command id:0x00000120 0x00000010
+[os][I][2722]: preload view 6, status 0
+
+[os][I][2722]: preload view 6, status 1
+
+[view][I][457]: view 6 layout started
+
+[os][I][673]: testres: change str file /NOR:A/bt_watch.zhC to /NOR:A/bt_watch.enG
+
+
+[os][I][763]: try_cnt 30 space 0
+
+[part
+[10:24:11.182] 接收:
+ ition][I][251]: found write part 14 for file_id 0xa
+
+dsp_acts_r
+[10:24:11.183] 接收:
+ elease_image: dsp image <adMUSIC.dsp> free, type=0
+[os][I][1946]: scene id 0xcaedec57, info sum 32 
+
+[os][I][379]: open ftxxx /NOR:C/vfont.ttf 22
+
+[os][I][831]: open cached: font size 22, size obj 0x38356524
+
+[os][I][390]: dsc->font 0x383525f4
+
+[os][I
+[10:24:11.183] 接收:
+ ][414]: line height 27, base line 6, dsc 0x383587b4
+
+[os][I][379]: open ftxxx /NOR:C/vfont.ttf 26
+
+[os][I][978]: font attr font size 26, per data size 0, max cached number 0
+
+[os][I][1068]: font size 26, asc 25, dsc -7, lineheight 32, base line 7, heigh
+[10:24:11.184] 接收:
+ t 30
+
+[os][I][309]: bitmap font cache info dump: total used 265
+[10:24:11.186] 接收:
+ 92, peak size 26848, max size 180000
+
+[os][I][390]: dsc->font 0x3835262c
+
+[os][I][414]: line height 32, base line 7, dsc 0x383587c4
+
+[view][I][466]: view 6 layout inflated
+
+[os][I][763]: t
+[10:24:11.186] 接收:
+ ry_cnt 40 space 0
+
+[view][I][317]: view 6 defocused
+[view][I][
+[10:24:11.187] 接收:
+ 185]: view 6 pause draw (0x100bd341)
+[view][I][497]: view 6 layout finished
+
+[dvfs0][I][291]: level 60, is_set 0 init
+[dvfs0][I][199]: max idx 4
+
+[dvfs0][I][291]: level 30, is_set 1 launch
+[10:24:11.187] 接收:
+ er
+[dvfs0][I][199]: max idx 4
+
+[view][I][853]: view 6 painted
+
+[10:24:11.188] 接收:
+ 
+[os][I][1946]: scene id 0xc3b4d64b, info sum 32 
+
+[os][I][2625]: 
+ ###  scene 0xc3b4d64b, total_size 24704
+
+[view][I][424]: view 19 created (flags=0x0)
+
+[os][I][2722]: preload view 19, st
+[10:24:11.188] 接收:
+ atus 0
+
+[os][I][2722]: preload view 19, status 1
+
+[view][I][45
+[10:24:11.190] 接收:
+ 7]: view 19 layout started
+
+[os][I][1946]: scene id 0xc3b4d64b, info sum 32 
+
+[os][I][379]: open ftxxx /NOR:C/vfont.ttf 22
+
+[os][I][831]: open cached: font size 22, size obj 0x38356524
+
+[o
+[10:24:11.191] 接收:
+ s][I][390]: dsc->font 0x383525f4
+
+[os][I][414]: line height 27,
+[10:24:11.191] 接收:
+  base line 6, dsc 0x38358cac
+
+[os][I][187]: load resource succeed
+[os][I][275]: update text: Steps
+
+[os][I][292]: _step_view_layout
+[view][I][466]: view 19 layout inflated
+
+[view][I][317]: view 19 defocused
+[os][I][2056]: 
+
+ ###### _unload_scene_bitmaps 0xc3b4d64b 
+
+[os][I][2157]: exit
+
+[view][I][185]: view 19 
+[10:24:11.193] 接收:
+ pause draw (0x100bd341)
+[view][I][194]: mark disp dirty (now 1)
+[10:24:11.193] 接收:
+ 
+
+[view][I][1112]: view 6 drag 0x40
+
+[view][I][194]: mark disp dirty (now 1)
+
+[view][I][1112]: view 19 drag 0x80
+
+[view][I][497]: view 19 layout finished
+
+[bt_drv][I][415]: gen p192 public key
+[composer][W][475]: frame refresh over vsync: 69212 us
+
+
+[10:24:11.194] 接收:
+ [os][I][763]: try_cnt 60 space 0
+
+[bt_drv][I][478]: gen p256 pk
+[10:24:11.194] 接收:
+ 
+[os][I][763]: try_cnt 70 space 0
+
+[os][I][763]: try_cnt 80 space 0
+
+[composer][W][475]: frame refresh over vsync: 69208 us
+
+[os][I][763]: try_cnt 90 space 0
+
+[os][I][763]: try_cnt 100 space 0
+
+[os][I][769]: try_cnt 101, left_len 1024 + 0, fadeout: 1
+[10:24:11.195] 接收:
+ 
+
+[os][I][1104]: mix_stream (nil), sample_rate 0->16
+
+[bt_transmit][W][249]: catpure not exist
+[os][I][467]: submit cmd 288 0 13 16 seq 13 totalsize 28 buffer  28 
+
+[os][I][584]: stop dsp sleep
+
+[os][I][467]: submit cmd 290 0 13 4 seq 14 totalsize 16 
+[10:24:11.196] 接收:
+ buffer  16 
+
+[os][I][467]: submit cmd 290 5 13 4 seq 15 totalsi
+[10:24:11.197] 接收:
+ ze 16 buffer  32 
+
+[os][I][593]: ---handle 0x3800dd20--
+
+[os][I][668]: stop 0x2ff6fdb4 begin 
+[aout][I][1670]: session#0x38015f74, audio out stop
+[os][I][674]: stop 0x2ff6fdb4 ok 
+[os][I]
+[10:24:11.198] 接收:
+ [614]: close(0x3800dd20)
+[os][I][467]: submit cmd 288 5 6 36 se
+[10:24:11.198] 接收:
+ q 16 totalsize 48 buffer  64 
+
+[os][I][467]: submit cmd 34 804749536 804749536 0 seq 17 totalsize 12 buffer  76 
+
+[os][I][86]: [uc log]uc_disable_speaker_pa---------------------------->>>>>>>>>>>>>>>>>>>>>>
+[os][I][411]: DSP power off
+
+[os][I][342]: se
+[10:24:11.199] 接收:
+ ssion 1 closed (uuid=1)
+[os][I][181]: session 1 destroyed (uuid
+[10:24:11.199] 接收:
+ =1)
+[os][I][595]: destory 0x2ff6fdb4 begin
+[os][I][219]:  0x2ff6fdb4 index 0
+
+[aout][I][1259]: session#0@0x38015f74 closed
+[os][I][620]: destory 0x2ff6fdb4 ok
+[os][I][658]: dvfs level 40
+
+[dvfs0][I][291]: level 40, is_set 0 media
+[dvfs0][I][199]: ma
+[10:24:11.202] 接收:
+ x idx 4
+
+
+[10:24:11.301] 接收:
+ [BTC] .-^12-6-1080e
+
+[10:24:11.383] 接收:
+ [UNICAIR]      at_get_mdm_info_loop_handler       mdm_info.at_status is: 0
+
+[10:24:11.404] 接收:
+ [os][I][338]: step_count: 10
+[os][I][347]: bearing: 0
+
+[10:24:11.524] 接收:
+ [pmuadc0][I][510]: Enable PMU ADC channel@3
+Set hosc cap 10.0 p
+[10:24:11.534] 接收:
+ f
+[cap_comp][I][136]: temp 21, cap base 100 comp 0.0
+
+[10:24:11.571] 接收:
+ HOSC_CTL = 0x36c8f7f6 HOSCLDO_CTL = 0x800a9a04
+
+[10:24:11.624] 接收:
+ [spi_flash_acts][I][604]: nor_e:offset=0x54f000,len=0x1000
+
+[os][I][1290]: temperature 21.3
+[spi_flash_acts][I][688]: nor_e:of
+[10:24:11.625] 接收:
+ f=0x54f000,len=0x1000, tran=91 us, wait=90648
+
+
+[10:24:11.717] 接收:
+ SPI1: set rate 186000000 Hz, real rate 186666666 Hz,CMU_SPICLK=0x10e
+
+[10:24:11.727] 接收:
+ psram delaychain update by vdd:1200 => 1100
+SPI0: set rate 100000000 Hz, real rate 93333333 Hz,CMU_SPICLK=0x102
+nor delaychain update by vdd:1200 => 1100
+new dsp freq 112, cpu freq 140, gpu freq 140, de freq 140, jpeg freq 187, vdd volt 1100
+new dsp freq 112, cpu freq 94, gpu freq 94, de freq 94, jpeg freq 140, vdd volt 1100
+SPI1: set rate 186000000 Hz, real rate 186666666 Hz,CMU_SPICLK=0x10e
+psram delaychain update by vdd:1100 => 1000
+
+[10:24:11.734] 接收:
+ SPI0: set rate 100000000 Hz, real rate 93333333 Hz,CMU_SPICLK=0x102
+nor delaychain update by vdd:1100 => 1000
+new dsp freq 94, cpu freq 94, gpu freq 94, de freq 94, jpeg freq 140, vdd volt 1000
+work_q sysworkq 0x38012350 work 0x100737ad run 14361 us!!!
+
+Thread 0x38012350 sysworkq   run time 14 ms
+[os][I][222]: input boost stop
+[dvfs0][I][291]: level 60, is_set 0 input
+[dvfs0][I][230]: level_id [60] -> [50]
+[dvfs0][I][230]: level_id [50] -> [40]
+[dvfs0][I][230]: level_id [40] -> [30]
+
+[10:24:12.032] 接收:
+ 
+
+[base] orien=0.0 pres=0.0 alt=0.0 temp=0.0 hr=0.0
+
+
+
+[body] onbody=0 seden=0 handup=0 act_mode=1001 act_detect=0
+
+
+
+[gnss
+[10:24:12.034] 接收:
+ ] lat=0.0 lon=0.0 alt=0.0 bear=0.0 speed=0.0
+
+
+
+[sleeping] sta
+[10:24:12.041] 接收:
+ =0 duration=0 enter=0x0 exit=0x0
+
+  shallow: duration=0 time=0x0
+
+     deep: duration=0 time=0x0
+
+    awake: duration=0 time=0x0
+
+      rem: duration=0 time=0x0
+
+
+
+[pedometer] steps=0.0 
+[10:24:12.043] 接收:
+ distance=0.0 calories=0.0 type=1
+
+ step_freq: cur=0.0 avg=0.0 max=0.0
+
+  step_len: cur=0.0 avg=0.0
+
+      pace: cur=0.0 avg=0.0 max=0.0
+
+    elevat: slope=0.0 elev=0.0 up=0.0 down=0.0 f-up=0.0 f-down=0.0
+
+        hr: vo2max=0.0 hr_inten=0.0 hr_zone=0.0
+
+
+
+[biking] lat=0.0 lon=0.0 distance=0.0 calories=0.0
+
+  speed: cur=0.0 avg=0.0 max=0.0
+
+ elevat: slope=0.0 elev=0.0
+
+        hr: vo2max=0.0 hr_inten=0.0 hr_zone=0.0
+
+
+
+[os][I][338]: step_count: 0
+
+[10:24:12.058] 接收:
+ [composer][I][844]: post fps 4
+
+
+[10:24:12.406] 接收:
+ [os][I][338]: step_count: 10
+
+[10:24:12.807] 接收:
+ [BTC] .-.-.-.-.-.-.-.-^12-6-1080c
+
+[10:24:13.384] 接收:
+ [UNICAIR]      at_get_mdm_info_loop_handler       mdm_info.at_status is: 0
+
+[10:24:13.407] 接收:
+ [os][I][338]: step_count: 20
+
+[10:24:13.418] 接收:
+ [composer][I][844]: post fps 3
+
+
+[10:24:14.407] 接收:
+ [os][I][338]: step_count: 30
+
+[10:24:14.437] 接收:
+ [composer][I][844]: post fps 2
+
+
+[10:24:15.344] 接收:
+ new dsp freq 112, cpu freq 94, gpu freq 94, de freq 94, jpeg fre
+[10:24:15.345] 接收:
+ q 140, vdd volt 1100
+SPI1: set rate 186000000 Hz, real rate 186
+[10:24:15.353] 接收:
+ 666666 Hz,CMU_SPICLK=0x10e
+psram delaychain update by vdd:1000 => 1100
+
+[10:24:15.354] 接收:
+ SPI0: set rate 100000000 Hz, real rate 93333333 Hz,CMU_SPICLK=0x102
+nor delaychain update by vdd:1000 => 1100
+new dsp freq 112, cpu freq 140, gpu freq 140, de freq 140, jpeg freq 187, vdd vo
+[10:24:15.360] 接收:
+ lt 1100
+new dsp freq 187, cpu freq 187, gpu freq 187, de freq 187, jpeg freq 280, vdd volt 1200
+SPI1: set rate 280000000 Hz, r
+[10:24:15.361] 接收:
+ eal rate 280000000 Hz,CMU_SPICLK=0x100
+psram delaychain update by vdd:1100 => 1200
+SPI0: set rate 100000000 Hz, real rate 93333333 Hz,CMU_SPICLK=0x102
+nor delaychain update by vdd:1100 => 1200
+work_q sysworkq 0x38012350 work 0x100737ad run 14723 us!!!
+
+Thread 0x38012350 sysworkq   run time 14 ms
+[os][I][189]: type: 1, code:204, value:1
+
+[os][I][219]: input boost start
+[dvfs0][I][291]: level 60, is_set 1 input
+[dvfs0][I][230]: level_id [30] -> [40]
+[dvfs0][I][230]: level_id [40] -> [50]
+[dvfs0][I][230]: level_id [50] -> [60]
+[os][I][70]:  0x200000cc
+
+[os][I][523]: wakeup_time 6078 ms
+
+[os][I][933]: [unicair] view is:  2, key is: 0x200000cc
+[10:24:15.365] 接收:
+ 
+
+[10:24:15.366] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.385] 接收:
+ [UNICAIR]      at_get_mdm_info_loop_handler       mdm_info.at_status is: 0
+
+[10:24:15.389] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.406] 接收:
+ [os][I][338]: step_count: 40
+[os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.428] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.449] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.470] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.491] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.512] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.533] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.554] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.575] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.596] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.617] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.638] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.659] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.680] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.702] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.723] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.743] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.765] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+[os][I][70]:  0x100000cc
+
+[os][I][523]: wakeup_time 6483 ms
+
+[os][I][933]: [unicair
+[10:24:15.766] 接收:
+ ] view is:  2, key is: 0x100000cc
+
+[10:24:15.785] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.808] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.827] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.848] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.869] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.891] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.910] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.931] 接收:
+ [composer][I][844]: post fps 3
+
+
+[10:24:15.931] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.954] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.974] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:15.996] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.016] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.036] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.058] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.079] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.101] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.122] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.142] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.164] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.184] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.205] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.227] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.247] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.268] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.288] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.310] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.331] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.352] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.373] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.394] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.408] 接收:
+ [os][I][338]: step_count: 50
+
+[10:24:16.415] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.436] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.458] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.478] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.499] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.520] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.543] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.562] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.583] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.603] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.609] 接收:
+ [composer][I][445]: vsync 34000 us
+
+
+[10:24:16.625] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.647] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.667] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.688] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.708] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.729] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.750] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.773] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.792] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.814] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.834] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.856] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.877] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.897] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.919] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.939] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.951] 接收:
+ [composer][I][844]: post fps 2
+
+
+[10:24:16.960] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:16.982] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:17.002] 接收:
+ [�
+[10:24:17.023] 接收:
+ [�
+[10:24:17.045] 接收:
+ [�
+[10:24:17.066] 接收:
+ 踸�
+[10:24:17.087] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:17.107] 接收:
+ [os][I][189]: type: 1, code:204, value:1
+
+
+[10:24:17.130] 接收:
+ [�
+[10:24:17.150] 接收:
+ 埯
+[10:24:17.171] 接收:
+ �
+[10:24:17.192] 接收:
+ ��
+[10:24:17.213] 接收:
+ [�
+[10:24:17.234] 接收:
+ [�
+[10:24:17.257] 接收:
+ [�
+[10:24:17.277] 接收:
+ �
+[10:24:17.297] 接收:
+ [�
+[10:24:17.318] 接收:
+ [o
+[10:24:17.339] 接收:
+ 埯
+[10:24:17.361] 接收:
+ [�
+[10:24:17.381] 接收:
+ [os
+[10:24:17.389] 接收:
+ [
+[10:24:17.402] 接收:
+ [�
+[10:24:17.410] 接收:
+ [�
+[10:24:17.423] 接收:
+ [os
+[10:24:17.443] 接收:
+ [�
+[10:24:17.464] 接收:
+ [�
+[10:24:17.486] 接收:
+ 埯
+[10:24:17.506] 接收:
+ ��
+[10:24:17.527] 接收:
+ 埯
+[10:24:17.550] 接收:
+ [�
+[10:24:17.570] 接收:
+ 埯
+[10:24:17.591] 接收:
+ ��
+[10:24:17.611] 接收:
+ 跬um%um�89]: type: 1, code:204, value:1
+
+

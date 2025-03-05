@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pic/bg.jpg</file>
+        <file>pic/bg2.jfif</file>
+        <file>pic/bg3.png</file>
+        <file>pic/R-C.png</file>
+        <file>pic/true.jfif</file>
+        <file>logo.ico</file>
+        <file>images/cactus.png</file>
+        <file>images/dino.png</file>
+        <file>images/grass.png</file>
+    </qresource>
+</RCC>
