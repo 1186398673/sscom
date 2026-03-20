@@ -38,6 +38,7 @@ public:
     QLabel *label_7;
     QGridLayout *gridLayout_3;
     QGridLayout *gridLayout;
+    QPushButton *searchButton;
     QVBoxLayout *verticalLayout_3;
     QGroupBox *groupBox;
     QHBoxLayout *horizontalLayout_3;
@@ -73,13 +74,14 @@ public:
     QComboBox *databitBox;
     QComboBox *stopbitBox;
     QComboBox *jiaoyanBox;
+    QLineEdit *searchEdit;
     QPlainTextEdit *recvTextEdit;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName("Widget");
-        Widget->resize(800, 480);
+        Widget->resize(849, 560);
         QIcon icon;
         icon.addFile(QString::fromUtf8("pic/favicon (1).ico"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
         Widget->setWindowIcon(icon);
@@ -121,6 +123,13 @@ public:
         gridLayout_3->setObjectName("gridLayout_3");
         gridLayout = new QGridLayout();
         gridLayout->setObjectName("gridLayout");
+        searchButton = new QPushButton(Widget);
+        searchButton->setObjectName("searchButton");
+        searchButton->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
+"color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
+
+        gridLayout->addWidget(searchButton, 5, 0, 1, 1);
+
         verticalLayout_3 = new QVBoxLayout();
         verticalLayout_3->setObjectName("verticalLayout_3");
         groupBox = new QGroupBox(Widget);
@@ -248,7 +257,7 @@ public:
         verticalLayout_3->addLayout(horizontalLayout_2);
 
 
-        gridLayout->addLayout(verticalLayout_3, 2, 1, 1, 1);
+        gridLayout->addLayout(verticalLayout_3, 12, 1, 1, 1);
 
         label_8 = new QLabel(Widget);
         label_8->setObjectName("label_8");
@@ -374,7 +383,13 @@ public:
         horizontalLayout->addLayout(verticalLayout_2);
 
 
-        gridLayout->addLayout(horizontalLayout, 2, 0, 1, 1);
+        gridLayout->addLayout(horizontalLayout, 12, 0, 1, 1);
+
+        searchEdit = new QLineEdit(Widget);
+        searchEdit->setObjectName("searchEdit");
+        searchEdit->setStyleSheet(QString::fromUtf8("border-image: url(:/pic/true.jfif);"));
+
+        gridLayout->addWidget(searchEdit, 5, 1, 1, 1);
 
         recvTextEdit = new QPlainTextEdit(Widget);
         recvTextEdit->setObjectName("recvTextEdit");
@@ -389,14 +404,11 @@ public:
         recvTextEdit->setMaximumBlockCount(0);
         recvTextEdit->setBackgroundVisible(false);
 
-        gridLayout->addWidget(recvTextEdit, 1, 0, 1, 2);
+        gridLayout->addWidget(recvTextEdit, 11, 0, 1, 2);
 
 
         gridLayout_3->addLayout(gridLayout, 0, 0, 1, 1);
 
-        recvTextEdit->raise();
-        label_8->raise();
-        groupBox_2->raise();
 
         retranslateUi(Widget);
 
@@ -410,6 +422,7 @@ public:
         quitButton->setText(QCoreApplication::translate("Widget", "quit", nullptr));
         okButton->setText(QCoreApplication::translate("Widget", "ok", nullptr));
         label_7->setText(QCoreApplication::translate("Widget", "\350\257\267\350\276\223\345\205\245\346\263\242\347\211\271\347\216\207", nullptr));
+        searchButton->setText(QCoreApplication::translate("Widget", "\346\220\234\347\264\242", nullptr));
         groupBox->setTitle(QString());
         pushButton->setText(QString());
         label_6->setText(QCoreApplication::translate("Widget", "\350\207\252\345\210\266\344\270\262\345\217\243\345\212\251\346\211\213", nullptr));

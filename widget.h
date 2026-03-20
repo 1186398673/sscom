@@ -50,7 +50,23 @@ private slots:
 
 
     void on_pushButton_clicked();
+    void refreshSerialPorts(); // 刷新串口列表
 
+
+
+    void on_searchButton_clicked();
+    void searchKeyword();
+    void clearSearchHighlight();
+    void on_recvTextEdit_returnPressed();  // 加这行
+
+    void on_lineEdit_returnPressed();
+
+
+
+    void on_simplecheckBox_checkStateChanged(const Qt::CheckState &arg1);
+
+protected:
+    bool eventFilter(QObject *obj, QEvent *event) override;
 
 private:
     Ui::Widget *ui;
@@ -60,6 +76,7 @@ private:
     int currentIndex;
     bool sendHex;
     bool recvHex;
+    bool simple_mode;
 
 };
 #endif // WIDGET_H

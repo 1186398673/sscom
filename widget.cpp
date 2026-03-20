@@ -9,17 +9,19 @@
 #include <QFile>
 #include <QFileDialog>
 #include <QTextStream>
-
+#include <cstdio>
 #include "mainwindow.h"
-
+#include <QTextBlock>
+#include <QRegularExpression>
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Widget)
 
 {
     ui->setupUi(this);
-
-
+    ui->recvTextEdit->setReadOnly(false); // 允许输入
+    // 让recvTextEdit捕获回车按键，触发我们的槽函数
+    ui->recvTextEdit->installEventFilter(this);
 
 
 
@@ -27,10 +29,23 @@ Widget::Widget(QWidget *parent)
     serialPort=new QSerialPort(this);
     foreach(const QSerialPortInfo &info,QSerialPortInfo::availablePorts())
     {
-      serialnameport<<info.portName();
+      //serialnameport<<info.portName();
+      QString portName = info.portName();                  // COM3
+      QString description = info.description();            // 串口描述
+      QString showText = QString("%1  %2")
+                               .arg(portName)
+                               .arg(description);
+
+       ui->serianumBox->addItem(showText, portName);
+
     }
 
-    ui->serianumBox->addItems(serialnameport);
+
+
+
+
+    //ui->serianumBox->addItems(serialnameport);
+
 
 
 
@@ -82,6 +97,7 @@ Widget::Widget(QWidget *parent)
     updateQuote();
     sendHex=false;
     recvHex=false;
+    simple_mode=false;
 
 
 
@@ -102,6 +118,26 @@ Widget::~Widget()
 {
     delete ui;
 }
+
+
+void Widget::refreshSerialPorts()
+{
+    // 先清空原有列表
+    ui->serianumBox->clear();
+
+    // 重新扫描并添加所有可用串口
+    foreach(const QSerialPortInfo &info, QSerialPortInfo::availablePorts())
+    {
+        QString portName = info.portName();
+        QString description = info.description();
+        QString showText = QString("%1  %2").arg(portName).arg(description);
+
+        ui->serianumBox->addItem(showText, portName);
+    }
+}
+
+
+
 
 void Widget::on_openButton_clicked()
 {
@@ -157,7 +193,10 @@ void Widget::on_openButton_clicked()
         return;
     }
 
-    serialPort->setPortName(ui->serianumBox->currentText());
+    //serialPort->setPortName(ui->serianumBox->currentText());
+    QString realPortName = ui->serianumBox->currentData().toString();
+    serialPort->setPortName(realPortName);
+
 
     serialPort->setBaudRate(ui->botolvBox->currentText().toInt());
 
@@ -165,6 +204,8 @@ void Widget::on_openButton_clicked()
     serialPort->setStopBits(stopBits);
     serialPort->setParity(cheakBits);
     if(serialPort->open(QIODevice::ReadWrite)==true){
+     serialPort->setRequestToSend(true);
+     serialPort->setDataTerminalReady(true);
      QMessageBox::information(this,"提示","成功");
       ui->openButton->setEnabled(false);
       ui->sendButton->setEnabled(true);     //设置控件不可用
@@ -184,9 +225,11 @@ void Widget::on_openButton_clicked()
 void Widget::on_closeButton_clicked()
 {
     serialPort->close();
+    refreshSerialPorts();
     ui->openButton->setEnabled(true);
     ui->sendButton->setEnabled(false);     //设置控件不可用
     ui->closeButton->setEnabled(false);
+
 }
 
 void Widget::serialreadyread()
@@ -205,6 +248,13 @@ void Widget::serialreadyread()
         recvText = QString::fromLocal8Bit(data);
     }
 
+    // ====================== 关键：过滤 ANSI 颜色码 ======================
+    QRegularExpression ansiRegex(R"(\x1B\[[0-9;]*[mGK])");
+    recvText.remove(ansiRegex);
+    recvText.remove("\r");      // 去掉多余回车
+    recvText.replace("\n\n", "\n"); // 去重换行
+    // =================================================================
+
     // 创建一个文本格式对象并设置颜色为蓝色
     QTextCharFormat fmt;
     fmt.setForeground(QColor(Qt::blue));
@@ -212,11 +262,13 @@ void Widget::serialreadyread()
     // 获取文本编辑器的光标
     QTextCursor cursor = ui->recvTextEdit->textCursor();
 
-    // 插入时间戳和接收的文本，并应用颜色格式
-    if (recvHex) {
-        cursor.insertText("[" + timeString + "] 接收 (Hex):\n " + recvText + "\n", fmt);
-    } else {
-        cursor.insertText("[" + timeString + "] 接收:\n " + recvText + "\n", fmt);
+    if(!simple_mode){
+    // 插入时间戳和接收的文本
+    cursor.insertText("[" + timeString + "] 接收: " + recvText + "\n", fmt);
+    }
+    else
+    {
+       cursor.insertText(recvText + "\n", fmt);
     }
 
     // 滚动到文本的末尾
@@ -226,7 +278,7 @@ void Widget::serialreadyread()
 void Widget::on_sendButton_clicked()
 {
     // 获取发送的文本
-    QString sendText = ui->sendEdit->text();
+    QString sendText = ui->sendEdit->text()+"\r\n";
      QString sendTexthex;
 
 
@@ -254,10 +306,25 @@ void Widget::on_sendButton_clicked()
     QTextCursor cursor = ui->recvTextEdit->textCursor();
 
     // 插入时间戳和发送的文本，并应用颜色格式
-    if (sendHex) {
+    if(!simple_mode)
+    {
+     if (sendHex) {
         cursor.insertText("[" + timeString + "] 发送 (Hex): " + sendTexthex + "\n", fmt);
-    } else {
+     } else {
+
         cursor.insertText("[" + timeString + "] 发送: " + sendText + "\n", fmt);
+     }
+    }
+    else
+    {
+
+      // 简单模式：只发内容，不带时间戳
+        if (sendHex) {
+            cursor.insertText(sendTexthex + "\n", fmt);
+        } else {
+            cursor.insertText(sendText + "\n", fmt);
+        }
+
     }
 
     // 滚动到文本的末尾
@@ -266,8 +333,9 @@ void Widget::on_sendButton_clicked()
     // 发送数据
     serialPort->write(sendData);
 
+
     // 清空发送编辑框
-    ui->sendEdit->clear();
+    //ui->sendEdit->clear();
 
     // 禁用打开按钮，启用关闭按钮
     ui->openButton->setEnabled(false);
@@ -437,3 +505,105 @@ void Widget::on_pushButton_clicked()
    ct->show();
 }
 
+void Widget::searchKeyword()
+{
+    QString key = ui->searchEdit->text().trimmed();
+    if (key.isEmpty()) {
+        clearSearchHighlight();
+        return;
+    }
+
+    QTextDocument *doc = ui->recvTextEdit->document();
+    QTextCursor cursor(doc);
+
+    // 先清除旧高亮
+    clearSearchHighlight();
+
+    // 只设置背景高亮，不改变原有字体颜色
+    QTextCharFormat hlFormat;
+    hlFormat.setBackground(QColor(255, 255, 0, 100)); // 半透明黄
+
+    QTextDocument::FindFlags flags;
+    // flags |= QTextDocument::FindCaseSensitively; // 区分大小写，不需要就注释
+
+    bool found = false;
+    while (!cursor.isNull() && !cursor.atEnd()) {
+        cursor = doc->find(key, cursor, flags);
+        if (!cursor.isNull()) {
+            cursor.mergeCharFormat(hlFormat);
+            if (!found) {
+                ui->recvTextEdit->setTextCursor(cursor);
+                found = true;
+            }
+        }
+    }
+}
+
+void Widget::clearSearchHighlight()
+{
+    QTextCursor cursor(ui->recvTextEdit->document());
+    QTextCharFormat fmt;
+    fmt.setBackground(Qt::transparent); // 只清除背景，不碰字体颜色
+
+    cursor.select(QTextCursor::Document);
+    cursor.mergeCharFormat(fmt);
+}
+
+
+
+void Widget::on_searchButton_clicked()
+{
+    searchKeyword();
+}
+
+
+void Widget::on_lineEdit_returnPressed()
+{
+     searchKeyword();
+}
+
+
+// 接收面板按回车 = 发送输入内容
+void Widget::on_recvTextEdit_returnPressed()
+{
+    if (!serialPort->isOpen())
+        return;
+
+    // 取当前行输入的命令
+    QTextCursor cursor = ui->recvTextEdit->textCursor();
+    QString cmd = cursor.block().text().trimmed();
+
+    if (cmd.isEmpty())
+        return;
+
+    // 发送
+    QByteArray sendData = (cmd + "\r\n").toLocal8Bit();
+    serialPort->write(sendData);
+
+    // 关键：把你输入的那一行清空/删掉，不留在界面
+    cursor.select(QTextCursor::BlockUnderCursor);
+    cursor.removeSelectedText();
+}
+
+
+bool Widget::eventFilter(QObject *obj, QEvent *event)
+{
+    if (obj == ui->recvTextEdit && event->type() == QEvent::KeyPress) {
+        QKeyEvent *keyEvent = static_cast<QKeyEvent*>(event);
+        if (keyEvent->key() == Qt::Key_Return || keyEvent->key() == Qt::Key_Enter) {
+            // 触发我们的回车发送函数
+            on_recvTextEdit_returnPressed();
+            return true; // 拦截事件，避免换行
+        }
+    }
+    return QWidget::eventFilter(obj, event);
+}
+
+
+
+
+
+void Widget::on_simplecheckBox_checkStateChanged(const Qt::CheckState &arg1)
+{
+     simple_mode=ui->simplecheckBox->checkState();
+}
