@@ -38,29 +38,7 @@ public:
     QLabel *label_7;
     QGridLayout *gridLayout_3;
     QGridLayout *gridLayout;
-    QPushButton *searchButton;
-    QVBoxLayout *verticalLayout_3;
-    QGroupBox *groupBox;
-    QHBoxLayout *horizontalLayout_3;
-    QPushButton *pushButton;
-    QSpacerItem *horizontalSpacer_7;
-    QLabel *label_6;
-    QSpacerItem *horizontalSpacer_6;
-    QHBoxLayout *horizontalLayout_4;
-    QCheckBox *sendHexBox;
-    QLineEdit *sendEdit;
-    QCheckBox *recvHexBox;
-    QHBoxLayout *horizontalLayout_2;
-    QPushButton *openButton;
-    QSpacerItem *horizontalSpacer;
-    QPushButton *closeButton;
-    QSpacerItem *horizontalSpacer_2;
-    QPushButton *sendButton;
-    QSpacerItem *horizontalSpacer_3;
-    QPushButton *cleanButton;
-    QSpacerItem *horizontalSpacer_4;
-    QPushButton *saveButton;
-    QLabel *label_8;
+    QLineEdit *searchEdit;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout;
     QLabel *label;
@@ -74,8 +52,31 @@ public:
     QComboBox *databitBox;
     QComboBox *stopbitBox;
     QComboBox *jiaoyanBox;
-    QLineEdit *searchEdit;
     QPlainTextEdit *recvTextEdit;
+    QVBoxLayout *verticalLayout_3;
+    QGroupBox *groupBox;
+    QHBoxLayout *horizontalLayout_3;
+    QPushButton *pushButton;
+    QSpacerItem *horizontalSpacer_7;
+    QLabel *label_6;
+    QSpacerItem *horizontalSpacer_6;
+    QHBoxLayout *horizontalLayout_4;
+    QLineEdit *sendEdit;
+    QCheckBox *simplecheckBox;
+    QCheckBox *sendHexBox;
+    QCheckBox *recvHexBox;
+    QHBoxLayout *horizontalLayout_2;
+    QPushButton *openButton;
+    QSpacerItem *horizontalSpacer;
+    QPushButton *closeButton;
+    QSpacerItem *horizontalSpacer_2;
+    QPushButton *sendButton;
+    QSpacerItem *horizontalSpacer_3;
+    QPushButton *cleanButton;
+    QSpacerItem *horizontalSpacer_4;
+    QPushButton *saveButton;
+    QLabel *label_8;
+    QPushButton *searchButton;
 
     void setupUi(QWidget *Widget)
     {
@@ -119,16 +120,147 @@ public:
 
         gridLayout_2->addWidget(label_7, 0, 0, 1, 2);
 
+        botolvEdit->raise();
+        label_7->raise();
+        okButton->raise();
+        quitButton->raise();
         gridLayout_3 = new QGridLayout(Widget);
         gridLayout_3->setObjectName("gridLayout_3");
         gridLayout = new QGridLayout();
         gridLayout->setObjectName("gridLayout");
-        searchButton = new QPushButton(Widget);
-        searchButton->setObjectName("searchButton");
-        searchButton->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
-"color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
+        searchEdit = new QLineEdit(Widget);
+        searchEdit->setObjectName("searchEdit");
+        searchEdit->setStyleSheet(QString::fromUtf8("border-image: url(:/pic/true.jfif);"));
 
-        gridLayout->addWidget(searchButton, 5, 0, 1, 1);
+        gridLayout->addWidget(searchEdit, 5, 1, 1, 1);
+
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName("horizontalLayout");
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName("verticalLayout");
+        label = new QLabel(Widget);
+        label->setObjectName("label");
+        label->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
+"color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
+        label->setAlignment(Qt::AlignmentFlag::AlignCenter);
+
+        verticalLayout->addWidget(label);
+
+        label_2 = new QLabel(Widget);
+        label_2->setObjectName("label_2");
+        label_2->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
+"color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
+        label_2->setAlignment(Qt::AlignmentFlag::AlignCenter);
+
+        verticalLayout->addWidget(label_2);
+
+        label_3 = new QLabel(Widget);
+        label_3->setObjectName("label_3");
+        label_3->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
+"color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
+        label_3->setAlignment(Qt::AlignmentFlag::AlignCenter);
+
+        verticalLayout->addWidget(label_3);
+
+        label_4 = new QLabel(Widget);
+        label_4->setObjectName("label_4");
+        label_4->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
+"color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
+        label_4->setAlignment(Qt::AlignmentFlag::AlignCenter);
+
+        verticalLayout->addWidget(label_4);
+
+        label_5 = new QLabel(Widget);
+        label_5->setObjectName("label_5");
+        label_5->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
+"color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
+        label_5->setAlignment(Qt::AlignmentFlag::AlignCenter);
+
+        verticalLayout->addWidget(label_5);
+
+
+        horizontalLayout->addLayout(verticalLayout);
+
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setObjectName("verticalLayout_2");
+        serianumBox = new QComboBox(Widget);
+        serianumBox->setObjectName("serianumBox");
+        QFont font1;
+        font1.setPointSize(10);
+        font1.setBold(true);
+        serianumBox->setFont(font1);
+        serianumBox->setStyleSheet(QString::fromUtf8("border-image: url(:/pic/true.jfif);"));
+
+        verticalLayout_2->addWidget(serianumBox);
+
+        botolvBox = new QComboBox(Widget);
+        botolvBox->addItem(QString());
+        botolvBox->addItem(QString());
+        botolvBox->addItem(QString());
+        botolvBox->addItem(QString());
+        botolvBox->addItem(QString());
+        botolvBox->setObjectName("botolvBox");
+        botolvBox->setFont(font);
+        botolvBox->setCursor(QCursor(Qt::CursorShape::ArrowCursor));
+        botolvBox->setStyleSheet(QString::fromUtf8("border-image: url(:/pic/true.jfif);"));
+        botolvBox->setEditable(true);
+        botolvBox->setFrame(true);
+
+        verticalLayout_2->addWidget(botolvBox);
+
+        databitBox = new QComboBox(Widget);
+        databitBox->addItem(QString());
+        databitBox->addItem(QString());
+        databitBox->addItem(QString());
+        databitBox->addItem(QString());
+        databitBox->setObjectName("databitBox");
+        databitBox->setFont(font);
+        databitBox->setStyleSheet(QString::fromUtf8("border-image: url(:/pic/true.jfif);"));
+
+        verticalLayout_2->addWidget(databitBox);
+
+        stopbitBox = new QComboBox(Widget);
+        stopbitBox->addItem(QString());
+        stopbitBox->addItem(QString());
+        stopbitBox->addItem(QString());
+        stopbitBox->setObjectName("stopbitBox");
+        stopbitBox->setFont(font);
+        stopbitBox->setAutoFillBackground(false);
+        stopbitBox->setStyleSheet(QString::fromUtf8("border-image: url(:/pic/true.jfif);"));
+        stopbitBox->setFrame(true);
+
+        verticalLayout_2->addWidget(stopbitBox);
+
+        jiaoyanBox = new QComboBox(Widget);
+        jiaoyanBox->addItem(QString());
+        jiaoyanBox->addItem(QString());
+        jiaoyanBox->addItem(QString());
+        jiaoyanBox->setObjectName("jiaoyanBox");
+        jiaoyanBox->setFont(font);
+        jiaoyanBox->setStyleSheet(QString::fromUtf8("border-image: url(:/pic/true.jfif);"));
+
+        verticalLayout_2->addWidget(jiaoyanBox);
+
+
+        horizontalLayout->addLayout(verticalLayout_2);
+
+
+        gridLayout->addLayout(horizontalLayout, 13, 0, 1, 1);
+
+        recvTextEdit = new QPlainTextEdit(Widget);
+        recvTextEdit->setObjectName("recvTextEdit");
+        recvTextEdit->setAutoFillBackground(false);
+        recvTextEdit->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);"));
+        recvTextEdit->setLineWidth(4);
+        recvTextEdit->setVerticalScrollBarPolicy(Qt::ScrollBarPolicy::ScrollBarAlwaysOn);
+        recvTextEdit->setTabChangesFocus(false);
+        recvTextEdit->setUndoRedoEnabled(false);
+        recvTextEdit->setReadOnly(false);
+        recvTextEdit->setCursorWidth(3);
+        recvTextEdit->setMaximumBlockCount(0);
+        recvTextEdit->setBackgroundVisible(false);
+
+        gridLayout->addWidget(recvTextEdit, 11, 0, 1, 2);
 
         verticalLayout_3 = new QVBoxLayout();
         verticalLayout_3->setObjectName("verticalLayout_3");
@@ -150,9 +282,9 @@ public:
 
         label_6 = new QLabel(groupBox);
         label_6->setObjectName("label_6");
-        QFont font1;
-        font1.setPointSize(18);
-        label_6->setFont(font1);
+        QFont font2;
+        font2.setPointSize(18);
+        label_6->setFont(font2);
         label_6->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
 "color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
 
@@ -167,21 +299,14 @@ public:
 
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setObjectName("horizontalLayout_4");
-        sendHexBox = new QCheckBox(Widget);
-        sendHexBox->setObjectName("sendHexBox");
-        sendHexBox->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
-"color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
-
-        horizontalLayout_4->addWidget(sendHexBox);
-
         sendEdit = new QLineEdit(Widget);
         sendEdit->setObjectName("sendEdit");
-        QFont font2;
-        font2.setFamilies({QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221")});
-        font2.setPointSize(9);
-        font2.setBold(false);
-        font2.setItalic(false);
-        sendEdit->setFont(font2);
+        QFont font3;
+        font3.setFamilies({QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221")});
+        font3.setPointSize(9);
+        font3.setBold(false);
+        font3.setItalic(false);
+        sendEdit->setFont(font3);
         sendEdit->setStyleSheet(QString::fromUtf8("border-image: url(:/pic/true.jfif);\n"
 "font: 9pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 ""));
@@ -189,6 +314,20 @@ public:
         sendEdit->setCursorMoveStyle(Qt::CursorMoveStyle::LogicalMoveStyle);
 
         horizontalLayout_4->addWidget(sendEdit);
+
+        simplecheckBox = new QCheckBox(Widget);
+        simplecheckBox->setObjectName("simplecheckBox");
+        simplecheckBox->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
+"color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
+
+        horizontalLayout_4->addWidget(simplecheckBox);
+
+        sendHexBox = new QCheckBox(Widget);
+        sendHexBox->setObjectName("sendHexBox");
+        sendHexBox->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
+"color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
+
+        horizontalLayout_4->addWidget(sendHexBox);
 
         recvHexBox = new QCheckBox(Widget);
         recvHexBox->setObjectName("recvHexBox");
@@ -257,154 +396,27 @@ public:
         verticalLayout_3->addLayout(horizontalLayout_2);
 
 
-        gridLayout->addLayout(verticalLayout_3, 12, 1, 1, 1);
+        gridLayout->addLayout(verticalLayout_3, 13, 1, 1, 1);
 
         label_8 = new QLabel(Widget);
         label_8->setObjectName("label_8");
-        QFont font3;
-        font3.setPointSize(14);
-        font3.setBold(true);
-        font3.setKerning(true);
-        label_8->setFont(font3);
+        QFont font4;
+        font4.setPointSize(14);
+        font4.setBold(true);
+        font4.setKerning(true);
+        label_8->setFont(font4);
         label_8->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
 "color: rgb(255, 255, 0);"));
         label_8->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
         gridLayout->addWidget(label_8, 0, 0, 1, 2);
 
-        horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName("horizontalLayout");
-        verticalLayout = new QVBoxLayout();
-        verticalLayout->setObjectName("verticalLayout");
-        label = new QLabel(Widget);
-        label->setObjectName("label");
-        label->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
+        searchButton = new QPushButton(Widget);
+        searchButton->setObjectName("searchButton");
+        searchButton->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
 "color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
-        label->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
-        verticalLayout->addWidget(label);
-
-        label_2 = new QLabel(Widget);
-        label_2->setObjectName("label_2");
-        label_2->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
-"color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
-        label_2->setAlignment(Qt::AlignmentFlag::AlignCenter);
-
-        verticalLayout->addWidget(label_2);
-
-        label_3 = new QLabel(Widget);
-        label_3->setObjectName("label_3");
-        label_3->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
-"color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
-        label_3->setAlignment(Qt::AlignmentFlag::AlignCenter);
-
-        verticalLayout->addWidget(label_3);
-
-        label_4 = new QLabel(Widget);
-        label_4->setObjectName("label_4");
-        label_4->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
-"color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
-        label_4->setAlignment(Qt::AlignmentFlag::AlignCenter);
-
-        verticalLayout->addWidget(label_4);
-
-        label_5 = new QLabel(Widget);
-        label_5->setObjectName("label_5");
-        label_5->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);\n"
-"color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.1875 rgba(255, 255, 255, 255));"));
-        label_5->setAlignment(Qt::AlignmentFlag::AlignCenter);
-
-        verticalLayout->addWidget(label_5);
-
-
-        horizontalLayout->addLayout(verticalLayout);
-
-        verticalLayout_2 = new QVBoxLayout();
-        verticalLayout_2->setObjectName("verticalLayout_2");
-        serianumBox = new QComboBox(Widget);
-        serianumBox->setObjectName("serianumBox");
-        QFont font4;
-        font4.setPointSize(10);
-        font4.setBold(true);
-        serianumBox->setFont(font4);
-        serianumBox->setStyleSheet(QString::fromUtf8("border-image: url(:/pic/true.jfif);"));
-
-        verticalLayout_2->addWidget(serianumBox);
-
-        botolvBox = new QComboBox(Widget);
-        botolvBox->addItem(QString());
-        botolvBox->addItem(QString());
-        botolvBox->addItem(QString());
-        botolvBox->addItem(QString());
-        botolvBox->addItem(QString());
-        botolvBox->setObjectName("botolvBox");
-        botolvBox->setFont(font);
-        botolvBox->setCursor(QCursor(Qt::CursorShape::ArrowCursor));
-        botolvBox->setStyleSheet(QString::fromUtf8("border-image: url(:/pic/true.jfif);"));
-        botolvBox->setEditable(true);
-        botolvBox->setFrame(true);
-
-        verticalLayout_2->addWidget(botolvBox);
-
-        databitBox = new QComboBox(Widget);
-        databitBox->addItem(QString());
-        databitBox->addItem(QString());
-        databitBox->addItem(QString());
-        databitBox->addItem(QString());
-        databitBox->setObjectName("databitBox");
-        databitBox->setFont(font);
-        databitBox->setStyleSheet(QString::fromUtf8("border-image: url(:/pic/true.jfif);"));
-
-        verticalLayout_2->addWidget(databitBox);
-
-        stopbitBox = new QComboBox(Widget);
-        stopbitBox->addItem(QString());
-        stopbitBox->addItem(QString());
-        stopbitBox->addItem(QString());
-        stopbitBox->setObjectName("stopbitBox");
-        stopbitBox->setFont(font);
-        stopbitBox->setAutoFillBackground(false);
-        stopbitBox->setStyleSheet(QString::fromUtf8("border-image: url(:/pic/true.jfif);"));
-        stopbitBox->setFrame(true);
-
-        verticalLayout_2->addWidget(stopbitBox);
-
-        jiaoyanBox = new QComboBox(Widget);
-        jiaoyanBox->addItem(QString());
-        jiaoyanBox->addItem(QString());
-        jiaoyanBox->addItem(QString());
-        jiaoyanBox->setObjectName("jiaoyanBox");
-        jiaoyanBox->setFont(font);
-        jiaoyanBox->setStyleSheet(QString::fromUtf8("border-image: url(:/pic/true.jfif);"));
-
-        verticalLayout_2->addWidget(jiaoyanBox);
-
-
-        horizontalLayout->addLayout(verticalLayout_2);
-
-
-        gridLayout->addLayout(horizontalLayout, 12, 0, 1, 1);
-
-        searchEdit = new QLineEdit(Widget);
-        searchEdit->setObjectName("searchEdit");
-        searchEdit->setStyleSheet(QString::fromUtf8("border-image: url(:/pic/true.jfif);"));
-
-        gridLayout->addWidget(searchEdit, 5, 1, 1, 1);
-
-        recvTextEdit = new QPlainTextEdit(Widget);
-        recvTextEdit->setObjectName("recvTextEdit");
-        recvTextEdit->setAutoFillBackground(false);
-        recvTextEdit->setStyleSheet(QString::fromUtf8("background-image: url(:/pic/bg.jpg);"));
-        recvTextEdit->setLineWidth(4);
-        recvTextEdit->setVerticalScrollBarPolicy(Qt::ScrollBarPolicy::ScrollBarAlwaysOn);
-        recvTextEdit->setTabChangesFocus(false);
-        recvTextEdit->setUndoRedoEnabled(false);
-        recvTextEdit->setReadOnly(false);
-        recvTextEdit->setCursorWidth(3);
-        recvTextEdit->setMaximumBlockCount(0);
-        recvTextEdit->setBackgroundVisible(false);
-
-        gridLayout->addWidget(recvTextEdit, 11, 0, 1, 2);
+        gridLayout->addWidget(searchButton, 5, 0, 1, 1);
 
 
         gridLayout_3->addLayout(gridLayout, 0, 0, 1, 1);
@@ -422,18 +434,6 @@ public:
         quitButton->setText(QCoreApplication::translate("Widget", "quit", nullptr));
         okButton->setText(QCoreApplication::translate("Widget", "ok", nullptr));
         label_7->setText(QCoreApplication::translate("Widget", "\350\257\267\350\276\223\345\205\245\346\263\242\347\211\271\347\216\207", nullptr));
-        searchButton->setText(QCoreApplication::translate("Widget", "\346\220\234\347\264\242", nullptr));
-        groupBox->setTitle(QString());
-        pushButton->setText(QString());
-        label_6->setText(QCoreApplication::translate("Widget", "\350\207\252\345\210\266\344\270\262\345\217\243\345\212\251\346\211\213", nullptr));
-        sendHexBox->setText(QCoreApplication::translate("Widget", "Hex\345\217\221\351\200\201", nullptr));
-        recvHexBox->setText(QCoreApplication::translate("Widget", "Hex\346\230\276\347\244\272", nullptr));
-        openButton->setText(QCoreApplication::translate("Widget", "\346\211\223\345\274\200", nullptr));
-        closeButton->setText(QCoreApplication::translate("Widget", "\345\205\263\351\227\255", nullptr));
-        sendButton->setText(QCoreApplication::translate("Widget", "\345\217\221\351\200\201", nullptr));
-        cleanButton->setText(QCoreApplication::translate("Widget", "\346\270\205\347\251\272", nullptr));
-        saveButton->setText(QCoreApplication::translate("Widget", "\344\277\235\345\255\230\346\226\207\344\273\266", nullptr));
-        label_8->setText(QCoreApplication::translate("Widget", "TextLabel", nullptr));
         label->setText(QCoreApplication::translate("Widget", "\344\270\262\345\217\243\345\217\267", nullptr));
         label_2->setText(QCoreApplication::translate("Widget", "\346\263\242\347\211\271\347\216\207 ", nullptr));
         label_3->setText(QCoreApplication::translate("Widget", "\346\225\260\346\215\256\344\275\215", nullptr));
@@ -459,6 +459,19 @@ public:
         jiaoyanBox->setItemText(2, QCoreApplication::translate("Widget", "2", nullptr));
 
         recvTextEdit->setPlainText(QString());
+        groupBox->setTitle(QString());
+        pushButton->setText(QString());
+        label_6->setText(QCoreApplication::translate("Widget", "\350\207\252\345\210\266\344\270\262\345\217\243\345\212\251\346\211\213", nullptr));
+        simplecheckBox->setText(QCoreApplication::translate("Widget", "\347\256\200\346\264\201\346\250\241\345\274\217", nullptr));
+        sendHexBox->setText(QCoreApplication::translate("Widget", "Hex\345\217\221\351\200\201", nullptr));
+        recvHexBox->setText(QCoreApplication::translate("Widget", "Hex\346\230\276\347\244\272", nullptr));
+        openButton->setText(QCoreApplication::translate("Widget", "\346\211\223\345\274\200", nullptr));
+        closeButton->setText(QCoreApplication::translate("Widget", "\345\205\263\351\227\255", nullptr));
+        sendButton->setText(QCoreApplication::translate("Widget", "\345\217\221\351\200\201", nullptr));
+        cleanButton->setText(QCoreApplication::translate("Widget", "\346\270\205\347\251\272", nullptr));
+        saveButton->setText(QCoreApplication::translate("Widget", "\344\277\235\345\255\230\346\226\207\344\273\266", nullptr));
+        label_8->setText(QCoreApplication::translate("Widget", "TextLabel", nullptr));
+        searchButton->setText(QCoreApplication::translate("Widget", "\346\220\234\347\264\242", nullptr));
     } // retranslateUi
 
 };

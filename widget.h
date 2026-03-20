@@ -40,7 +40,7 @@ private slots:
     void on_saveButton_clicked();
     void on_okButton_clicked();
     void on_quitButton_clicked();
-    void on_botolvBox_currentTextChanged(const QString &arg1);
+
     void updateQuote();
     void on_sendHexBox_checkStateChanged(const Qt::CheckState &arg1);
     void on_recvHexBox_checkStateChanged(const Qt::CheckState &arg1);
@@ -64,6 +64,10 @@ private slots:
 
 
     void on_simplecheckBox_checkStateChanged(const Qt::CheckState &arg1);
+
+
+
+    void on_botolvBox_currentIndexChanged(int index);
 
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;

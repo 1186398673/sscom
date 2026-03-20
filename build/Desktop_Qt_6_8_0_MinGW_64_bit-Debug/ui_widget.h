@@ -120,6 +120,10 @@ public:
 
         gridLayout_2->addWidget(label_7, 0, 0, 1, 2);
 
+        botolvEdit->raise();
+        label_7->raise();
+        okButton->raise();
+        quitButton->raise();
         gridLayout_3 = new QGridLayout(Widget);
         gridLayout_3->setObjectName("gridLayout_3");
         gridLayout = new QGridLayout();
